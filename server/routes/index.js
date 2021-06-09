@@ -1,6 +1,8 @@
 const path = require('path');
 const keystone = require('keystone');
 const cors = require('cors');
+const apisobreDA = require('../controllers/sobreDA');
+
 
 const Post = keystone.list('Posts');
 
@@ -20,6 +22,8 @@ module.exports = (app) => {
       }
     });
   });
+
+  app.get('/api/sobreDA', apisobreDA.getsobreDA);
 
   app.get('*', (req, res) => {
 		res.redirect('/');
