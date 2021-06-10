@@ -20,6 +20,13 @@ boasVindas.add({
     initial: true,
     index: true
   },
+  link: {
+    type: Types.Url,
+    required: true,
+    unique: true,
+    initial: true,
+    index: true
+  },
 })
 
 boasVindas.register();
