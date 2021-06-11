@@ -5,8 +5,10 @@ const cors = require('cors');
 const Post = keystone.list('Posts');
 
 const apisobreDA = require('../controllers/sobreDA');
-const apiDepoimentos = require('../controllers/depoimentos');
 const apiContato = require('../controllers/contato');
+const apiDepoimentos = require('../controllers/depoimentos');
+const apiBoasVindas = require('../controllers/boasVindas')
+const apiNossasAcoes = require('../controllers/acoes')
 
 module.exports = (app) => {
   app.use(cors());
@@ -27,6 +29,8 @@ module.exports = (app) => {
 
   app.get('/api/sobreDA', apisobreDA.getsobreDA);
   app.get('/api/contato', apiContato.getcontact);
+  app.get('/api/boasVindas', apiBoasVindas.getBoasVindas);
+  app.get('/api/NossasAcoes', apiNossasAcoes.getAcoes);
   app.get('/api/depoimentos', apiDepoimentos.getDepoimentos);
 
   app.get('*', (req, res) => {
