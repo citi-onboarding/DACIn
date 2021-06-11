@@ -8,6 +8,7 @@ const nossasAcoes = new keystone.List("nossasAcoes", {
 
 nossasAcoes.add({
     title: {
+        value: "nossasAcoes",
         type: Types.Text,
         index: true,
         initial: true,

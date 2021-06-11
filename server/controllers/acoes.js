@@ -14,7 +14,7 @@ const handlers = {
           res.status(500).send('DB Error');
         }
 
-        objeto.nossasAcoes = data;
+        objeto.dataNossasAcoes = data;
 
       });
 
@@ -24,7 +24,7 @@ const handlers = {
           res.status(500).send('DB Error');
         }
 
-        objeto.acoesArea = data;
+        objeto.dataAcoesArea = data;
 
       });
 
