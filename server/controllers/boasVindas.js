@@ -4,7 +4,7 @@ const boasVindas = keystone.list("boasVindas").model
 const handlers = {
     getWelcomeSection: function (req, res) {
 
-        bosVindas.find().exec(function (err, data) {
+        boasVindas.find().exec(function (err, data) {
             if (err) {
                 res.status(500).send("DB Error")
             } else {
