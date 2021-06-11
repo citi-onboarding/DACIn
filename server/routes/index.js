@@ -29,8 +29,8 @@ module.exports = (app) => {
 
   app.get('/api/sobreDA', apisobreDA.getsobreDA);
   app.get('/api/contato', apiContato.getcontact);
-  app.get('/api/boasVindas', apiBoasVindas.getBoasVindas)
-  app.get('/api/NossasAcoes', apiNossasAcoes.getAcoes)
+  app.get('/api/boasVindas', apiBoasVindas.getBoasVindas);
+  app.get('/api/NossasAcoes', apiNossasAcoes.getAcoes);
   app.get('/api/depoimentos', apiDepoimentos.getDepoimentos);
 
   app.get('*', (req, res) => {
