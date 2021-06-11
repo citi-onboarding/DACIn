@@ -2,7 +2,7 @@ const keystone = require("keystone")
 const boasVindas = keystone.list("boasVindas").model
 
 const handlers = {
-    getWelcomeSection: function (req, res) {
+    getBoasVindas: function (req, res) {
 
         bosVindas.find().exec(function (err, data) {
             if (err) {
@@ -11,8 +11,6 @@ const handlers = {
                 res.status(200).send(data)
             }
         })
-
-
     }
 }
 
