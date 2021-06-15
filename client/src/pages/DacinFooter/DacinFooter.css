@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap');
+
+body, html {
+  margin: 0;
+  font-family: 'Barlow', sans-serif;
+}
+
+p{
+  margin: 0px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #14074B;
+}
+
+h1{
+  margin: 0px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #14074B;
+}
+
+.Footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 255px;
+  background: #F1F1F1;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+}
+
+.contatos{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 935px;
+  gap: 110px;
+  height: 255px;
+}
+
+.contato2{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap:57px ;
+  padding-top: 40px;
+}
+
+.telefone, .endereço, .email{
+  width: 216px;
+}
+
+.endereço{
+  padding-left: 120px;
+  padding-top: 40px;
+}
+
+.barrinha{
+  padding-bottom: 17px;
+}
+
+.informações{
+  display: flex;
+  flex-direction: column;
+  width: 351px;
+  height: 100%;
+  gap:120px;
+}
+
+.logo{
+  padding-top: 40px;
+  padding-right: 120px;
+  padding-left: 26px;
+  width: 205px;
+  height: 64px;
+}
+
+.mensagemCiti{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding-bottom: 9px;
+  gap: 6px;
+  width: 231.23px;
+  height: 22px;
+}
+
+@media (max-width: 320px){
+
+  h1{
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .Footer{
+    display: flex;
+    flex-direction: column;
+    height: 195px;
+    gap: 16px;
+  }
+
+.contatos p{
+    font-size:12px;
+    line-height: 14px;
+  }
+  .contatos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 320px;
+    gap: 60px;
+    height: 127px;
+  }
+
+  .contato2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 122px;
+    padding-top: 8px;
+    gap: 20px;
+    padding-right: 12px;
+  }
+
+  .endereço{
+    padding-left: 12px;
+    padding-top: 8px;
+    width: 122px;
+    height: 119px;
+  }
+
+  .descriçãoEndereço{
+    width: 122px;
+    height: 84px;
+  }
+
+  .descriçãoEndereço p{
+    font-size: 10.8px;
+    width: 122px;
+    height: 84px;
+  }
+
+
+  .telefone, .email{
+    width: 115px;
+  }
+
+  .barrinha{
+    align-items: flex-start;
+    padding: 0px;
+    height: 16px;
+    width: 30px;
+  }
+
+  .barrinha img{
+    height: 2px;
+    width: 30px;
+    padding-bottom: 8px;
+  }
+
+  .informações{
+    display: flex;
+    flex-direction: row;
+    width: 320px;
+    height: 52px;
+    align-items: flex-end;
+    gap: 68px;
+  }
+
+  .logo img{
+    width: 114px;
+    height: 36px;
+  }
+
+  .logo{
+    width: 114px;
+    height: 36px;
+    padding-top:0px;
+    padding-bottom:12px;
+    padding-left:12px;
+    padding-right:0px ;
+  }
+
+  .mensagemCiti{
+    width: 114px;
+    height: 10.75px;
+    padding-bottom: 16.25px;
+    padding-right: 12px;
+    gap: 2.96px;
+  }
+
+  .mensagemCiti p{
+    font-size: 8.79647px;
+    line-height: 11px;
+    width: 96.63px;
+    height: 10.75px;
+  }
+
+  .mensagem{
+    width: 96.63px;
+    height: 10.75px;
+  }
+
+  .citizinho img{
+    width: 100%;
+    height: 100%;
+  }
+
+
+}
