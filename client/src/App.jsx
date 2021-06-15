@@ -1,10 +1,10 @@
 import {
-  PostList,
-} from './components';
+  DacinFooter,
+} from './pages';
 
 function App() {
   return (
-    <PostList />
+    <DacinFooter />
   );
 }
 
