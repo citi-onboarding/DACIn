@@ -1,13 +1,13 @@
 import './cssGlobal.css';
 
 import {
-  PostList,
-} from './components';
+  BoasVindas,
+} from './pages';
 
 function App() {
   return (
     <>
-      <PostList />
+      <BoasVindas />
     </>
   );
 }

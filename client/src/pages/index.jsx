@@ -1,1 +1,1 @@
-export { default   } from './';
+export { default as BoasVindas } from './BoasVindas';
