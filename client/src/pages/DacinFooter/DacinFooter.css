@@ -48,10 +48,6 @@ h1{
   padding-top: 40px;
 }
 
-.telefone, .endereço, .email{
-  width: 216px;
-}
-
 .endereço{
   padding-left: 120px;
   padding-top: 40px;
@@ -66,7 +62,7 @@ h1{
   flex-direction: column;
   width: 351px;
   height: 100%;
-  gap:120px;
+  gap: 120px;
 }
 
 .logo{
