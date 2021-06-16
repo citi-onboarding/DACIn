@@ -8,8 +8,8 @@ import {
 function App() {
   return (
     <>
-      <DacinFooter />
       <BoasVindas />
+      <DacinFooter />
     </>
   );
 }
