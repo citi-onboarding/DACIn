@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  background-color: #F5F5F5;
+}
+
+.SobreDA {
+  display: flex;
+}
+
+.detailing {
+  display: grid;
+  grid-template-areas: 
+  ".Surgimento" ".Atualmente"
+  ".Finalidade" ".Cursos";
+  gap: 30px;
+  margin-left: 185px;
+}

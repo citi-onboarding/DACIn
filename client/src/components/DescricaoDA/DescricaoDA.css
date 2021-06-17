@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+.PurpleSquare {
+    display: flex;
+    height: 90px;
+    width: 90px;
+    background-color: #A99BDE;
+}
+
+
+.descricaoDA {
+    display: flex;
+    flex-direction: column;
+}
+
+.ContentDA h1 {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    color: #14074B;
+    margin-bottom: 18px;
+}
+
+.lineDA {
+    width: 60px;
+    height: 0px;
+    border: 2px solid #4C3B92;
+    margin-bottom: 12px;
+}
+
+.ContentDA p {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #14074B;
+}
