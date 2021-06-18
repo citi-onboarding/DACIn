@@ -6,7 +6,7 @@ import './SectionCards.css';
 function SectionCards(props) {
 
   return (
-    <div style={{backgroundImage: props.bgcolor, transform: props.colorDirection, borderRadius: props.borderDirection, padding: props.padding}} className="sectionCards">
+    <div className={`sectionCards-${props.complement}`}>
         <div style={{alignItems: props.align, textAlign: props.textalign}} className="content">
           <div className="line"></div>
           <h1 className="title">{props.title}</h1>

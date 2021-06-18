@@ -15,9 +15,9 @@ body {
 
 .line {
   width: 7em;
-  height: 0px;
-  border: 0.3em solid #F1F1F1;
-  margin-bottom: 2.4em;
+  height: 0.5em;
+  background-color: #F1F1F1;
+  margin-bottom: 2.8em;
 }
 
 .content {
@@ -38,6 +38,23 @@ body {
   font-style: normal;
   font-weight: 600;
   font-size: 4em;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
   color: #F1F1F1;
+}
+
+@media screen and (max-width: 340px) {
+  .title {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .line {
+    height: 3px;
+    width: 35px;
+    margin-bottom: 12px;
+  }
 }

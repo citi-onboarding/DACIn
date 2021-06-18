@@ -11,6 +11,7 @@ body {
 
 .SobreDA {
   display: flex;
+  margin-bottom: 20em;
 }
 
 .detailing {
@@ -19,5 +20,95 @@ body {
   ".Surgimento" ".Atualmente"
   ".Finalidade" ".Cursos";
   gap: 30px;
-  margin-left: 185px;
+  margin: auto;
+}
+
+.sectionCards-SobreDA {
+  width: 53.5em;
+  height: 33.2em;
+  background-image: linear-gradient(118.63deg, #DB1E2F -0.8%, #4C3B92 72.27%);
+  padding: 4.2em 6em 10.5em 12em;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin: 27.9em 0 0 20em;
+  width: 300px;
+  height: 372.5px;
+}
+
+.carousel-content {
+  width: 100%;
+  height: 330px;
+  background-color: #F1F1F1;
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
+}
+
+.slick-dots {
+  display: flex;
+  top: 0%;
+  margin-top: 33em;
+  padding: 0;
+}
+
+.slick-prev:before, .slick-next:before {
+  display: none;
+}
+
+.slick-dots li button:before {
+  font-size: 10px;
+  color: #A99BDE;
+  opacity: 100%;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #4C3B92;
+}
+
+.slick-prev:before, .slick-next:before{
+  font-size: 0;
+}
+
+.slick-prev{
+  top: 339px;
+  left: 13%;
+}
+
+.slick-next{
+  left:83%;
+  top: 279px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 340px) {
+  
+  .SobreDA {
+    display: block;
+  }
+  
+  .sectionCards-SobreDA {
+    background-image: none;
+    background-color: #4C3B92;
+    border-radius: 0;
+    padding: 24px 12px 40px 12px;
+    width: 100%;
+    height: 189px;
+  }
+
+  .sectionCards-SobreDA > h1 {
+    font-size: 22px;
+  }
+
+  .sectionCards-SobreDA > p {
+    font-size: 16px;
+  }
+  
+  .sectionCards-SobreDA > .line {
+    width: 100%;
+  }
+
 }
