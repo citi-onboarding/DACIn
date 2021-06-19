@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap');
 
-body, html {
+body,html {
   margin: 0;
   font-family: 'Barlow', sans-serif;
 }
 
-p{
+.paragrafo{
   margin: 0px;
   font-size: 18px;
   line-height: 22px;
@@ -53,12 +53,16 @@ h1{
   padding-top: 40px;
 }
 
-.barrinha{
-  padding-bottom: 17px;
+.barrinha2{
+  background: #14074B;
+  width:60px ;
+  height:3px;
+  margin-bottom: 17px;
+  margin-top:18px ;
 }
-
 .informações{
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   width: 351px;
   height: 100%;
@@ -83,7 +87,7 @@ h1{
   height: 22px;
 }
 
-@media (max-width: 320px){
+@media (max-width: 400px){
 
   h1{
     font-size: 16px;
@@ -97,7 +101,7 @@ h1{
     gap: 16px;
   }
 
-.contatos p{
+  .contatos p{
     font-size:12px;
     line-height: 14px;
   }
@@ -143,17 +147,11 @@ h1{
     width: 115px;
   }
 
-  .barrinha{
-    align-items: flex-start;
-    padding: 0px;
-    height: 16px;
-    width: 30px;
-  }
-
-  .barrinha img{
+  .barrinha2{
+    margin-top:8px ;
+    margin-bottom:8px ;
     height: 2px;
     width: 30px;
-    padding-bottom: 8px;
   }
 
   .informações{
