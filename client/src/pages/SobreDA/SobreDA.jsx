@@ -23,11 +23,11 @@ function SampleNextArrow(props) {
   return (
     <div
       className={className}
-      style={{...style, display: 'block', position: 'relative', width: '10.51px', height: '17.66px'}}
+      style={{ ...style, display: 'block', position: 'relative', width: '10.51px', height: '17.66px' }}
       onClick={onClick}
     >
-      <img src={NextArrow} alt="next-arrow"/>
-      </div>
+      <img src={NextArrow} alt="next-arrow" />
+    </div>
   );
 }
 
@@ -36,73 +36,116 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{...style, display: 'block', position: 'relative', width: '10.51px', height: '17.66px'}}
+      style={{ ...style, display: 'block', position: 'relative', width: '10.51px', height: '17.66px' }}
       onClick={onClick}
     >
-      <img src={PrevArrow} alt="prev-arrow"/>
-      </div>
+      <img src={PrevArrow} alt="prev-arrow" />
+    </div>
   );
 }
 
 function SobreDA() {
-  const settings = {
+  var settings = {
     dots: true,
-    infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    initialSlide: 0,
+    centerMode: true,
+    centerPadding: "-15px",
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    appendDots: dots => (
+      <div>
+        <ul style={{ margin: "auto"}}> {dots} </ul>
+      </div>
+    ),
+    responsive: [
+      { 
+        breakpoint: 340,
+        settings: {
+          infinite: false,
+          initialSlide: 0,
+          speed: 500,
+          centerMode: true,
+          centerPadding: "-5px",
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        }
+      },
+    ]
   };
+
+  const [infoDA, setInfoDA] = useState([]);
+  const [SobreDATEXT, setSobreDATEXT] = useState([]);
+  const [ImagesDA, setImagesDA] = useState([]);
+
+  const loadImagesDA = async () => {
+    const res = await axios.get('http://localhost:3001/api/sobreDA');
+    setImagesDA(res.data.datacarrosselDA);
+  };
+  const loadInfoDA = async () => {
+    const res = await axios.get('http://localhost:3001/api/sobreDA');
+    setInfoDA(res.data.datainformationsDA);
+  };
+  const loadSobreDATEXT = async () => {
+    const res = await axios.get('http://localhost:3001/api/sobreDA');
+    setSobreDATEXT(res.data.datasobreDA);
+  };
+
+  useEffect(() => {
+    loadInfoDA();
+    loadSobreDATEXT();
+    loadImagesDA();
+  }, []);
+  
+
   return (
     <div className="SobreDA">
-      <SectionCards title="Sobre o DA" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum ut tincidunt aliquam, faucibus eu amet. Odio nulla enim, nam amet, enim, sodales molestie in sem." complement="SobreDA" />
+      <SectionCards title={SobreDATEXT[0]?.title} description={SobreDATEXT[0]?.text} complement="SobreDA" />
       <div className="detailing">
         <div className="Surgimento">
-          <DescricaoDA TitleDA="Surgimento" DescriptionDA="Surgiu em 1974, antes vinculado ao Centro de Ciências Exatas e da Natureza (CCEN) " WidthDA="250px" ImageDA={puzzle} ImageDADescription="puzzle" squarePadding="20px 11px 20px 11px" />
+          <DescricaoDA TitleDA={infoDA[0]?.title} DescriptionDA={infoDA[0]?.text} ImageDA={infoDA[0]?.Image.secure_url} ImageDADescription="puzzle" DAComplement="Surgimento" paragraph="Surgimento"/>
         </div>
         <div className="Atualmente">
-          <DescricaoDA TitleDA="Atualmente" DescriptionDA="Nos dias de hoje, o que era o CCEN, se tornou o Centro de Informatica (CIn)" WidthDA="264px" ImageDA={info} ImageDADescription="info" squarePadding="20px 16px 20px 16px" />
+          <DescricaoDA TitleDA={infoDA[1]?.title} DescriptionDA={infoDA[1]?.text} ImageDA={infoDA[1]?.Image.secure_url} ImageDADescription="info" DAComplement="Atualmente" paragraph="Atualmente"/>
         </div>
         <div className="Finalidade">
-          <DescricaoDA TitleDA="Finalidade" DescriptionDA="Representar estudantes de graduação do centro" WidthDA="280px" ImageDA={lamp} ImageDADescription="lamp" squarePadding="18px" />
+          <DescricaoDA TitleDA={infoDA[2]?.title} DescriptionDA={infoDA[2]?.text} ImageDA={infoDA[2]?.Image.secure_url} ImageDADescription="lamp" DAComplement="Finalidade" paragraph="Finalidade"/>
         </div>
         <div className="Cursos">
-          <DescricaoDA TitleDA="Cursos" DescriptionDA="O DA representa alunos dos cursos de Ciências da Computação, Engenharia da Computação e Sistemas de Informação" WidthDA="280px" ImageDA={notebook} ImageDADescription="notebook" squarePadding="17px 13px 17px 13px" />
+          <DescricaoDA TitleDA={infoDA[3]?.title} DescriptionDA={infoDA[3]?.text} ImageDA={infoDA[3]?.Image.secure_url} ImageDADescription="notebook" DAComplement="Cursos" paragraph="Cursos"/>
         </div>
       </div>
       <div className="carousel">
         <div className="carousel-content">
-          <h2>Carrossel</h2>
           <Slider {...settings}>
             <div>
               <div className="carousel-card">
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida amet in neque pretium, ut id vestibulum tempus sagittis.</h3>
+                <img src={ImagesDA[0]?.Image.secure_url} alt={ImagesDA[0]?.key} width="300px" height="330px"/>
               </div>
             </div>
             <div>
               <div className="carousel-card">
-                <h3>1</h3>
+              <img src={ImagesDA[1]?.Image.secure_url} alt={ImagesDA[1]?.key} width="300px" height="330px"/>
               </div>
             </div>
             <div>
               <div className="carousel-card">
-                <h3>1</h3>
               </div>
             </div>
             <div>
               <div className="carousel-card">
-                <h3>1</h3>
               </div>
             </div>
             <div>
               <div className="carousel-card">
-                <h3>1</h3>
               </div>
             </div>
             <div>
               <div className="carousel-card">
-                <h3>1</h3>
               </div>
             </div>
           </Slider>

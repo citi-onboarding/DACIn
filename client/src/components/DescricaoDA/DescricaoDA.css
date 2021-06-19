@@ -15,7 +15,6 @@ body, html {
     margin-bottom: 8px;
 }
 
-
 .descricaoDA {
     display: flex;
     flex-direction: column;
@@ -46,7 +45,25 @@ body, html {
 }
 
 @media screen and (max-width: 340px) {
-    .PurpleSquareDA {
-        padding: 10px;
+    .ContentDA {
+        position: absolute;
+        margin-left: 74px;
     }
+
+    .ContentDA > h1 {
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+
+    .lineDA {
+        margin-bottom: 8px;
+        width: 40px;
+    }
+
+    .ContentDA > p {
+        font-size: 12px;
+        width: 222px;
+        line-height: 15px;
+        margin-top: 0;
+    }    
 }

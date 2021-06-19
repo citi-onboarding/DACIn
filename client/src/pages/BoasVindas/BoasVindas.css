@@ -83,45 +83,48 @@ button {
 @media screen and (max-width: 340px) {
 
   .introduction {
-    margin: 64px 20px 0 20px;
+    margin: 64px 12px 0 12px;
   }
 
   p.welcome {
-    font-size: 1.5em;
+    font-size: 16px;
   }
 
   h1.welcome-title {
-    font-size: 2.0em;
+    font-size: 22px;
   }
 
   p.welcome-description{
     width: 16em;
-    font-size: 1.5em;
+    font-size: 16px;
   }
 
   .statuteButton {
     display: flex;
     align-items: center;
     gap: 7px;
-    width: 7.2em;
+    width: 147px;
     height: 1.8em;
     padding: 0;
-
     border-radius: 2px;
     margin-top: 0;
   }
 
   .statuteButton > span {
-    font-size: 0.68em;
+    font-size: 14px;
     font-weight: 400;
     font-family: 'Barlow';
     font-style: normal;
-    padding-bottom: 2px;
+    padding-bottom: 2.5px;
   }
 
   .statuteButton > img {
     width: 0.7em;
     height: 0.7em;
+  }
+
+  .images {
+    margin-bottom: 0;
   }
 
   .images > img {

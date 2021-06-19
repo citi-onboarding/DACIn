@@ -1,114 +1,277 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap');
-
-
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 10px;
-  background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    background-color: #F5F5F5;
 }
 
 .SobreDA {
-  display: flex;
-  margin-bottom: 20em;
+    display: flex;
+    margin-bottom: 20em;
 }
 
 .detailing {
-  display: grid;
-  grid-template-areas: 
-  ".Surgimento" ".Atualmente"
-  ".Finalidade" ".Cursos";
-  gap: 30px;
-  margin: auto;
+    display: grid;
+    grid-template-areas: ".Surgimento" ".Atualmente" ".Finalidade" ".Cursos";
+    gap: 30px;
+    margin: auto;
 }
 
 .sectionCards-SobreDA {
-  width: 53.5em;
-  height: 33.2em;
-  background-image: linear-gradient(118.63deg, #DB1E2F -0.8%, #4C3B92 72.27%);
-  padding: 4.2em 6em 10.5em 12em;
-  border-radius: 0px 8px 8px 0px;
+    width: 53.5em;
+    height: 33.2em;
+    background-image: linear-gradient(118.63deg, #DB1E2F -0.8%, #4C3B92 72.27%);
+    padding: 4.2em 6em 10.5em 12em;
+    border-radius: 0px 8px 8px 0px;
+}
+
+.slick-slider {
+    height: 330px;
 }
 
 .carousel {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  margin: 27.9em 0 0 20em;
-  width: 300px;
-  height: 372.5px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin: 25.9em 0 0 20em;
+    width: 300px;
 }
 
 .carousel-content {
-  width: 100%;
-  height: 330px;
-  background-color: #F1F1F1;
-  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
+    width: 330px;
+    height: 330px;
+}
+
+.carousel-card {
+    width: 300px;
+    height: 330px;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
+}
+
+.carousel-card>img {
+    margin-top: 40px;
+    width: 300px;
+    height: 330px;
+}
+
+.carousel-card>img {
+    margin-top: -18px;
 }
 
 .slick-dots {
-  display: flex;
-  top: 0%;
-  margin-top: 33em;
-  padding: 0;
+    height: -30px;
+    display: flex;
+    top: 0%;
+    margin-top: 37em;
 }
 
-.slick-prev:before, .slick-next:before {
-  display: none;
+.slick-prev:before,
+.slick-next:before {
+    display: none;
 }
 
 .slick-dots li button:before {
-  font-size: 10px;
-  color: #A99BDE;
-  opacity: 100%;
+    font-size: 10px;
+    color: #A99BDE;
+    opacity: 100%;
 }
 
 .slick-dots li.slick-active button:before {
-  opacity: 1;
-  color: #4C3B92;
+    opacity: 1;
+    color: #4C3B92;
 }
 
-.slick-prev:before, .slick-next:before{
-  font-size: 0;
+.slick-prev {
+    top: 379px;
+    left: 25%;
 }
 
-.slick-prev{
-  top: 339px;
-  left: 13%;
+.slick-next {
+    left: 65%;
+    top: 27.83px;
+    z-index: 1;
 }
 
-.slick-next{
-  left:83%;
-  top: 279px;
-  z-index: 1;
+.slick-dots li button {
+    margin: 0;
+    width: 4px;
+    height: 4px;
+}
+
+.slick-dots li button:before {
+    width: 4px;
+    height: 4px;
+    line-height: 10px;
+    font-size: 10px;
+}
+
+.slick-dots li {
+    width: 3px;
+    height: 4px;
+}
+
+.slick-dots > ul {
+    margin: 0 !important;
+    width: 300px;
+}
+
+.PurpleSquare-Surgimento,
+.PurpleSquare-Atualmente,
+.PurpleSquare-Finalidade,
+.PurpleSquare-Cursos {
+    height: 90px;
+    width: 90px;
+    background-color: #A99BDE;
+    margin-bottom: 8px;
+}
+
+.PurpleSquare-Surgimento {
+    padding: 20px 11px 20px 11px;
+}
+
+.paragraphDA-Surgimento {
+    width: 250px;
+}
+
+.PurpleSquare-Atualmente {
+    padding: 20px 17px 20px 17px;
+}
+
+.paragraphDA-Atualmente {
+    width: 264px;
+}
+
+.PurpleSquare-Finalidade {
+    padding: 18px;
+}
+
+.paragraphDA-Finalidade {
+    width: 280px;
+}
+
+.PurpleSquare-Cursos {
+    padding: 17px 13px 17px 13px;
+}
+
+.paragraphDA-Cursos {
+    width: 280px;
 }
 
 @media screen and (max-width: 340px) {
-  
-  .SobreDA {
-    display: block;
-  }
-  
-  .sectionCards-SobreDA {
-    background-image: none;
-    background-color: #4C3B92;
-    border-radius: 0;
-    padding: 24px 12px 40px 12px;
-    width: 100%;
-    height: 189px;
-  }
-
-  .sectionCards-SobreDA > h1 {
-    font-size: 22px;
-  }
-
-  .sectionCards-SobreDA > p {
-    font-size: 16px;
-  }
-  
-  .sectionCards-SobreDA > .line {
-    width: 100%;
-  }
-
+    .SobreDA {
+        display: block;
+    }
+    .sectionCards-SobreDA {
+        background-image: none;
+        background-color: #4C3B92;
+        border-radius: 0;
+        padding: 24px 12px 40px 12px;
+        width: 100%;
+        height: 189px;
+    }
+    .sectionCards-SobreDA>h1 {
+        font-size: 22px;
+    }
+    .sectionCards-SobreDA>p {
+        font-size: 16px;
+    }
+    .sectionCards-SobreDA>.line {
+        width: 100%;
+    }
+    .detailing {
+        display: block;
+        margin-left: 12px;
+        margin-top: 150px;
+    }
+    .PurpleSquare-Surgimento,
+    .PurpleSquare-Atualmente,
+    .PurpleSquare-Finalidade,
+    .PurpleSquare-Cursos {
+        width: 53px;
+        height: 53px;
+    }
+    .PurpleSquare-Surgimento {
+        padding: 12px 7px 12px 7px;
+        margin-bottom: 45px;
+    }
+    .PurpleSquare-Surgimento>img {
+        width: 39.75px;
+        height: 29.15px;
+    }
+    .PurpleSquare-Atualmente {
+        padding: 12px 10px 12px 10px;
+        margin-bottom: 45px;
+    }
+    .PurpleSquare-Atualmente>img {
+        width: 33.57px;
+        height: 29.54px;
+    }
+    .PurpleSquare-Finalidade {
+        padding: 12px 7px 12px 7px;
+        margin-bottom: 45px;
+    }
+    .PurpleSquare-Finalidade>img {
+        width: 39.75px;
+        height: 29.15px;
+    }
+    .PurpleSquare-Cursos {
+        padding: 12px 7px 12px 7px;
+        margin-bottom: 45px;
+    }
+    .PurpleSquare-Cursos>img {
+        width: 39.75px;
+        height: 29.15px;
+    }
+    .carousel {
+        background-color: none;
+        top: 0;
+        margin-top: 46em;
+        margin-left: 0;
+        height: 144px;
+        width: 100%;
+    }
+    .carousel-content {
+        background-color: transparent;
+        box-shadow: none;
+        height: 124px;
+        width: 100%;
+    }
+    .carousel-card {
+        width: 108px;
+        height: 124px;
+        box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
+        margin: 20px 0px 20px 12px;
+    }
+    .carousel-card>img {
+        margin-top: 20px;
+        width: 108px;
+        height: 124px;
+    }
+    .slick-dots {
+        margin-top: 17.5em;
+    }
+    .slick-dots li button:before {
+        font-size: 5px;
+    }
+    .slick-prev>img,
+    .slick-next>img {
+        display: none;
+    }
+    .slick-dots li button {
+        margin: 0;
+        width: 4px;
+        height: 4px;
+    }
+    .slick-dots li button:before {
+        width: 4px;
+        height: 4px;
+        line-height: 10px;
+        font-size: 6px;
+    }
+    .slick-dots li {
+        width: 1px;
+        height: 4px;
+    }
 }

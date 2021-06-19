@@ -28,6 +28,7 @@ const handlers = {
   
       });
 
+      await res.status(200).send(objeto);
 
     }
 }
