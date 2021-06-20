@@ -57,11 +57,11 @@ function SobreDA() {
     prevArrow: <SamplePrevArrow />,
     appendDots: dots => (
       <div>
-        <ul style={{ margin: "auto"}}> {dots} </ul>
+        <ul style={{ margin: "auto" }}> {dots} </ul>
       </div>
     ),
     responsive: [
-      { 
+      {
         breakpoint: 340,
         settings: {
           infinite: false,
@@ -100,54 +100,35 @@ function SobreDA() {
     loadSobreDATEXT();
     loadImagesDA();
   }, []);
-  
+
 
   return (
     <div className="SobreDA">
       <SectionCards title={SobreDATEXT[0]?.title} description={SobreDATEXT[0]?.text} complement="SobreDA" />
       <div className="detailing">
         <div className="Surgimento">
-          <DescricaoDA TitleDA={infoDA[0]?.title} DescriptionDA={infoDA[0]?.text} ImageDA={infoDA[0]?.Image.secure_url} ImageDADescription="puzzle" DAComplement="Surgimento" paragraph="Surgimento"/>
+          <DescricaoDA TitleDA={infoDA[0]?.title} DescriptionDA={infoDA[0]?.text} ImageDA={infoDA[0]?.Image.secure_url} ImageDADescription="puzzle" DAComplement="Surgimento" paragraph="Surgimento" />
         </div>
         <div className="Atualmente">
-          <DescricaoDA TitleDA={infoDA[1]?.title} DescriptionDA={infoDA[1]?.text} ImageDA={infoDA[1]?.Image.secure_url} ImageDADescription="info" DAComplement="Atualmente" paragraph="Atualmente"/>
+          <DescricaoDA TitleDA={infoDA[1]?.title} DescriptionDA={infoDA[1]?.text} ImageDA={infoDA[1]?.Image.secure_url} ImageDADescription="info" DAComplement="Atualmente" paragraph="Atualmente" />
         </div>
         <div className="Finalidade">
-          <DescricaoDA TitleDA={infoDA[2]?.title} DescriptionDA={infoDA[2]?.text} ImageDA={infoDA[2]?.Image.secure_url} ImageDADescription="lamp" DAComplement="Finalidade" paragraph="Finalidade"/>
+          <DescricaoDA TitleDA={infoDA[2]?.title} DescriptionDA={infoDA[2]?.text} ImageDA={infoDA[2]?.Image.secure_url} ImageDADescription="lamp" DAComplement="Finalidade" paragraph="Finalidade" />
         </div>
         <div className="Cursos">
-          <DescricaoDA TitleDA={infoDA[3]?.title} DescriptionDA={infoDA[3]?.text} ImageDA={infoDA[3]?.Image.secure_url} ImageDADescription="notebook" DAComplement="Cursos" paragraph="Cursos"/>
+          <DescricaoDA TitleDA={infoDA[3]?.title} DescriptionDA={infoDA[3]?.text} ImageDA={infoDA[3]?.Image.secure_url} ImageDADescription="notebook" DAComplement="Cursos" paragraph="Cursos" />
         </div>
       </div>
       <div className="carousel">
         <div className="carousel-content">
           <Slider {...settings}>
-            <div>
-              <div className="carousel-card">
-                <img src={ImagesDA[0]?.Image.secure_url} alt={ImagesDA[0]?.key} width="300px" height="330px"/>
+            {ImagesDA?.map(({ Image }) =>
+              <div>
+                <div className="carousel-card">
+                  <img src={Image.secure_url} alt={Image.key} width="300px" height="330px" />
+                </div>
               </div>
-            </div>
-            <div>
-              <div className="carousel-card">
-              <img src={ImagesDA[1]?.Image.secure_url} alt={ImagesDA[1]?.key} width="300px" height="330px"/>
-              </div>
-            </div>
-            <div>
-              <div className="carousel-card">
-              </div>
-            </div>
-            <div>
-              <div className="carousel-card">
-              </div>
-            </div>
-            <div>
-              <div className="carousel-card">
-              </div>
-            </div>
-            <div>
-              <div className="carousel-card">
-              </div>
-            </div>
+            )}
           </Slider>
         </div>
       </div>
