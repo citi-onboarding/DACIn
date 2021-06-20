@@ -42,7 +42,7 @@ function SamplePrevArrow(props) {
 function DaDepoimentos() {
 
   const [DepoimentosCarrossel, setDepoimentosCarrossel] = useState([]);
-  const [DepoimentosTesxt, setDepoimentosInformacoes] = useState([]);
+  const [DepoimentosInformacoes, setDepoimentosInformacoes] = useState([]);
   
   const loadDepoimentosCarrossel = async () => {
     const res = await axios.get('http://localhost:3001/api/depoimentos');
@@ -72,7 +72,7 @@ function DaDepoimentos() {
     prevArrow: <SamplePrevArrow />,
     responsive: [
       {
-        breakpoint: 480,
+        breakpoint: 400,
           settings: {
           centerMode: true,
           seepd:500,
@@ -80,7 +80,19 @@ function DaDepoimentos() {
           infinite: true,
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerPadding: "84px"
+          centerPadding: "90px"
+        }
+      },
+      {
+      breakpoint: 340,
+          settings: {
+          centerMode: true,
+          seepd:500,
+          dots: true,
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerPadding: "70px"
         }
       }
     ]

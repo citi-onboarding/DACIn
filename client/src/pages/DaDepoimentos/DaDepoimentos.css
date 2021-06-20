@@ -49,11 +49,9 @@ body, html {
 
 .carrosseldepoimentos{
     position: relative;
-    left: 195px;
     bottom: 60px;
     display: flex;
     justify-content: center;
-    width: 1400px;
     height: 500px;
 
 }
@@ -103,10 +101,12 @@ body, html {
     top: 382.5px;
     left: 45.7%;
     z-index: 1;
+    width:10.51px;
+    height: 17.66px;
 }
 
 .slick-next{
-    left: 52.5%;
+    left: 51.2%;
     top:35px;
     z-index: 1;
     width:10,51px ;
