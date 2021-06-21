@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap');
 
 body, html {
-    margin: 0;
+    margin: 0px;
     font-family: 'Barlow', sans-serif;
 }
 
@@ -64,14 +64,13 @@ body, html {
 
 
 .slick-dots{
-    
     left: 45.5%;
     width: 100px;
     z-index: 0;
 }
 
 .slick-dots li button{
-    margin: 0;
+    margin: 0px;
     width: 10px;
     height: 10px;
 }
@@ -94,23 +93,20 @@ body, html {
     color: #4C3B92;
 }
 .slick-prev:before, .slick-next:before{
-    font-size: 0;
+    font-size: 0px;
 }
 
 .slick-prev{
     top: 382.5px;
-    left: 45.7%;
+    left: 45.5%;
     z-index: 1;
-    width:10.51px;
-    height: 17.66px;
 }
 
 .slick-next{
-    left: 51.2%;
+    margin-left: 88px;
+    left: 45.5%;
     top:35px;
     z-index: 1;
-    width:10,51px ;
-    height: 17,66px;
 }
 
 
