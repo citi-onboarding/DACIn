@@ -9,8 +9,51 @@ body {
   background-color: #F5F5F5;
 }
 
+.navbar-op {
+  position: relative;
+  color: #4C3B92;
+  text-decoration: none;
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  padding-left: 120px;
+  padding-right: 120px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 4em;
+}
+
+.navbar-op::after {
+  content: '';
+  position: absolute;
+  background-color: #4C3B92;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -7px;
+  transition: 0.3s;
+}
+
+.navbar-op:hover:after {
+  width: 100%;
+}
+
+
 .introduction {
-  margin: 15.6em 0 0 12em;
+  margin: 5.6em 0 0 12em;
   color:#14074B;
 }
 
@@ -80,10 +123,80 @@ button {
   padding-right: 12em;
 }
 
+#checkbox-menu {
+  position: absolute;
+  opacity: 0;
+}
+
+label {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 18px;
+  width: 19px;
+}
+
+.hamburguer-lines > span {
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #4C3B92;
+  transition: 0.25s ease-in-out;
+}
+
+.hamburguer-lines > span:nth-child(1) {
+  top: 0;
+}
+
+.hamburguer-lines > span:nth-child(2) {
+  top: 6px;
+}
+
+.hamburguer-lines > span:nth-child(3) {
+  top: 12px;
+}
+
+#checkbox-menu:checked + .hamburguer-lines > span:nth-child(1) {
+  transform: rotate(-45deg);
+  top: 6px;
+}
+
+#checkbox-menu:checked + .hamburguer-lines > span:nth-child(2) {
+  opacity: 0;
+}
+
+#checkbox-menu:checked + .hamburguer-lines > span:nth-child(3) {
+  transform: rotate(45deg);
+  top: 6px;
+}
+
+.hamburguer {
+  margin-right: -215px;
+  display: none;
+  margin-top: 3px;
+
+}
+
 @media screen and (max-width: 340px) {
 
+  header {
+    height: 40px;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  header > img {
+    width: 78px;
+    height: 24px;
+  }
+
+  .navbar-op {
+    display: none;
+  }
+
   .introduction {
-    margin: 64px 12px 0 12px;
+    margin: 24px 12px 0 12px;
   }
 
   p.welcome {
@@ -154,4 +267,9 @@ button {
     padding: 0;
     margin-right: 20px;
   }
+
+  .hamburguer {
+    display: flex;
+  }
+
 }
