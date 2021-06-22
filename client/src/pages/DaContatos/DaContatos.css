@@ -10,7 +10,8 @@ body, html {
     background: #E5E5E5;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content:center;
+    position: relative;
 }
 
 .cardContatos{
@@ -22,14 +23,16 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    position: absolute;
+    right: 0px;
+    z-index: 1;
+    
 }    
 
 .barrinhaContatos{
     width: 60px;
-    height: 3px;
+    height: 5px;
     background: #F1F1F1;
-    border: 5px solid #F5F5F5;
-    margin-bottom: 24px;
     margin-right: 120px;
 }
 
@@ -42,6 +45,7 @@ body, html {
     color: #F1F1F1;
     margin-right: 120px;
     margin-bottom: 23.71px;
+    margin-top: 24px;
 }
 
 .textoContatos p{
@@ -55,39 +59,96 @@ body, html {
     margin-right: 120px;
 }
 
+
+
+
+
 .caixaContatos{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 910px;
     height: 400px;
     box-shadow: 3px 3px 40px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
-}
-
-.meiosContatos{
-    width: 460px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 47.22px;
+    padding: 39px 47px 74px;
+    background: #F1F1F1;
+    position: absolute;
+    margin-top: 278px;
+    z-index: 2;
     
 }
+.meiosContatos{
+    width: 348px;
+    height: 100%;
+    font-size: 18px;
+    line-height: 22px;
+    color: #14074B;
+}
 
 
+
+.meiosContatos input{
+    padding: 14px 24px;
+    width: 348px;
+    height: 50px;
+    margin: 8px 0px 23.71px ;
+    border: 3px solid #4C3B92;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #AEAEAE;
+    outline: none;
+}
+
+#inputAssuntos{
+    margin-bottom: 0px;
+}
 
 .mensagemContatos{
-    width: 460px;
-    height: 400px;
-    
+    width: 348px;
+    height: 100%;
+    font-size: 18px;
+    line-height: 22px;
+    color: #14074B;
 }
 
-.mensagemContatos h2{
-   margin-top: 38px; 
+.mensagemContatos textarea{
+    resize: none;
+    padding: 14px 24px;
+    margin: 9px 0px 38px;
+    width: 348px;
+    height: 171px;
+    border: 3px solid #4C3B92;
+    border-radius: 4px;
+    color: #AEAEAE;
+    outline: none;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 
-@media  (max-width: 400px){
+.mensagemContatos button{
+    width: 131px;
+    height: 46px;
+    margin: 0px;
+    position: relative;
+    left: 108.5px;
+}
+
+.bonecosContatos{
+    width: 193.72px;
+    height: 138.45px;
+    display: flex;
+    flex-direction: row;
+    gap: 21.52px;
+    position: absolute;
+    margin-top: 139.55px;
+    margin-right: 550px;
+    z-index: 2;
+}
+
+@media  (max-width: 440px){
     .DaContatos{
         height: 592px;  
     }
@@ -128,6 +189,60 @@ body, html {
         color: #F1F1F1;
         margin-right: 0px;
         margin-left: 12.5px;
+    }
+
+    .caixaContatos{
+        flex-direction: column;
+        width: 296px;
+        height: 400px;
+        padding: 16px 28px 22px;
+        position: absolute;
+        margin-top: 160px;
+        z-index: 2;
+    }
+
+    .meiosContatos{
+        width: 240px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .meiosContatos input{
+        padding: 9px 12px;
+        width: 240px;
+        height: 32px;
+        margin: 4px 0px 8px ;
+        border: 1.5px solid #4C3B92;
+        border-radius: 1.32308px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .mensagemContatos{
+        width: 240px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .mensagemContatos textarea{
+        padding: 6px 12px;
+        margin: 4px 0px 19px;
+        width: 240px;
+        height: 120px;
+        border: 1.5px solid #4C3B92;
+        border-radius: 1.32308px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .mensagemContatos button{
+        height: 29.12px;
+        position: relative;
+        left: 54.2px;
+    }
+
+    .bonecosContatos{
+        display: none;
     }
 
 }
