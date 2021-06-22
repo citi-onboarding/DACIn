@@ -2,17 +2,16 @@ const keystone = require("keystone")
 const doenv = require('dotenv');
 const mailServer = require('../services/mailServer');
 
-const sendMail = async (req, res) => {
+const sendMail = async (req, res, next) => {
     try {
-        const { name, email, assunto, messagem, subject } = req.body;
+        const { name, email, subject, mensagem } = req.body;
 
             console.log(name)
         
         const body = `
         Nome: ${name}
         Email: ${email}
-        Assunto: ${assunto}
-        Mensagem: ${messagem}`
+        Mensagem: ${mensagem}`
 
         await mailServer({
             destinationUser: process.env.CLIENT_EMAIL,
