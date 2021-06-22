@@ -7,9 +7,9 @@ body {
     background-color: #F5F5F5;
 }
 
-.SobreDA {
+#SobreDA {
     display: flex;
-    margin-bottom: 20em;
+    margin-bottom: 20px;
 }
 
 .detailing {
@@ -161,7 +161,7 @@ body {
 }
 
 @media screen and (max-width: 340px) {
-    .SobreDA {
+    #SobreDA {
         display: block;
     }
     .sectionCards-SobreDA {

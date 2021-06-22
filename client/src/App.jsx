@@ -4,6 +4,7 @@ import {
   DacinFooter,
   BoasVindas,
   SobreDA,
+  NossasAcoes,
 } from './pages';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <>
       <BoasVindas />
       <SobreDA />
+      <NossasAcoes />
       <DacinFooter />
     </>
   );

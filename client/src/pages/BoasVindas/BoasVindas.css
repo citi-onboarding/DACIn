@@ -21,19 +21,25 @@ body {
 }
 
 header {
+  position: fixed;
   display: flex;
   align-items: center;
+  top: 0;
   height: 100px;
+  width: 100%;
   padding-left: 120px;
   padding-right: 120px;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  background-color: #F5F5F5;
   justify-content: space-between;
+  z-index: 1000;
 }
 
 .menu {
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
   list-style: none;
-  gap: 4em;
 }
 
 .navbar-op::after {
@@ -47,13 +53,17 @@ header {
   transition: 0.3s;
 }
 
+.options {
+  display: flex;
+  gap: 4em;
+}
+
 .navbar-op:hover:after {
   width: 100%;
 }
 
-
 .introduction {
-  margin: 5.6em 0 0 12em;
+  margin: 15.6em 0 0 12em;
   color:#14074B;
 }
 
@@ -90,7 +100,7 @@ p.welcome {
   font-weight: normal;
 }
 
-button {
+.statuteButton {
   margin-top: 48px;
   display: flex;
   align-items: center;
@@ -125,10 +135,10 @@ button {
 
 #checkbox-menu {
   position: absolute;
-  opacity: 0;
+  opacity: 0%;
 }
 
-label {
+.hamburguer-lines {
   cursor: pointer;
   position: relative;
   display: block;
@@ -157,25 +167,28 @@ label {
   top: 12px;
 }
 
-#checkbox-menu:checked + .hamburguer-lines > span:nth-child(1) {
+#checkbox-menu:checked + .hamburguer > .hamburguer-lines > span:nth-child(1) {
   transform: rotate(-45deg);
   top: 6px;
 }
 
-#checkbox-menu:checked + .hamburguer-lines > span:nth-child(2) {
+#checkbox-menu:checked + .hamburguer > .hamburguer-lines > span:nth-child(2) {
   opacity: 0;
 }
 
-#checkbox-menu:checked + .hamburguer-lines > span:nth-child(3) {
+#checkbox-menu:checked + .hamburguer > .hamburguer-lines > span:nth-child(3) {
   transform: rotate(45deg);
   top: 6px;
 }
 
 .hamburguer {
-  margin-right: -215px;
+  margin-left: 100px;
   display: none;
-  margin-top: 3px;
+  margin-top: 5px;
+}
 
+.introduction > a {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 340px) {
@@ -184,6 +197,7 @@ label {
     height: 40px;
     padding-right: 12px;
     padding-left: 12px;
+    z-index: 1000;
   }
 
   header > img {
@@ -191,12 +205,12 @@ label {
     height: 24px;
   }
 
-  .navbar-op {
+  .options {
     display: none;
   }
 
   .introduction {
-    margin: 24px 12px 0 12px;
+    margin: 64px 12px 0 12px;
   }
 
   p.welcome {
@@ -269,6 +283,38 @@ label {
   }
 
   .hamburguer {
+    display: block;
+  }
+
+  .teste {
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    display: none;
+  }
+
+  .options {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    left: 0;
+    width: 100%;
+    top: 40px;
+    background-color: #F5F5F5;
+    height: 100vh;
+    padding: 20px;
+    gap: 2em;
+    z-index: 10;
+  }
+
+  .options > a {
+    color: #4C3B92;
+    z-index: 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #00000036;
+  }
+
+  #checkbox-menu:checked ~ .options{
     display: flex;
   }
 
