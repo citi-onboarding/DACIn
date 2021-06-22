@@ -10,11 +10,11 @@ function DaContatos() {
 
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
-  const [assunto, setAssunto] = useState('')
+  const [subject, setSubject] = useState('')
   const [mensagem, setMensagem] = useState('')
 
   const data ={
-    name, email, assunto, mensagem
+    name, email, subject, mensagem
   }
   
 
@@ -24,7 +24,7 @@ function DaContatos() {
         const db = await axios.post('http://localhost:3001/api/Nodemailer', {
             "name": name,
             "email": email,
-            "assunto": assunto,
+            "subject": subject,
             "mensagem": mensagem
         })
 
@@ -34,7 +34,7 @@ function DaContatos() {
 
             setName('')
             setEmail('')
-            setAssunto('')
+            setSubject('')
             setMensagem('')
         }
     } catch (error) {
@@ -62,14 +62,14 @@ function DaContatos() {
         <div className="meiosContatos">
 
           <form  onSubmit={(event) => handleSubmit(event)}>
-            <label>Nome:</label>
-            <input type="text" name="Nome" placeholder="Insira seu nome" required onChange={(e) => setName(e.target.value)} />
+            <label htmlFor="name">Nome:</label>
+            <input type="text" name="Nome" placeholder="Insira seu nome" className="input-clear" required value={name} onChange={(e) => setName(e.target.value)} />
            
-            <label>Email:</label>
-            <input type="email" name="Email" placeholder="Insira seu email" required onChange={(e) => setEmail(e.target.value)} />
+            <label htmlFor="email">Email:</label>
+            <input type="email" name="Email" placeholder="Insira seu email" className="input-clear" required value={email} onChange={(e) => setEmail(e.target.value)} />
             
-            <label>Assuntos:</label>
-            <input id="inputAssunto" type="text" name="Assunto" placeholder="Insira um assunto" required onChange={(e) => setAssunto(e.target.value)} />
+            <label htmlFor="subject">Assuntos:</label>
+            <input id="inputAssunto" type="text" name="subject" className="input-clear" placeholder="Insira um assunto" value={subject} required onChange={(e) => setSubject(e.target.value)} />
             
           </form>
           
@@ -78,8 +78,8 @@ function DaContatos() {
         <div className="mensagemContatos">
           
           <form onSubmit={(event) => handleSubmit(event)}> 
-            <label>Mensagem:</label>
-            <textarea rows="10" placeholder="Digite a sua mensagem" requiredrows="10" required onChange={(e) => setMensagem(e.target.value)} />
+            <label htmlFor="message">Mensagem:</label>
+            <textarea rows="10" placeholder="Digite a sua mensagem" className="input-clear" requiredrows="10" value={mensagem} required onChange={(e) => setMensagem(e.target.value)} />
 
             <button type="sumit"  > Enviar </button>
           </form>
