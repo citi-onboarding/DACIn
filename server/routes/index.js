@@ -9,6 +9,7 @@ const apiContato = require('../controllers/contato');
 const apiDepoimentos = require('../controllers/depoimentos');
 const apiBoasVindas = require('../controllers/boasVindas')
 const apiNossasAcoes = require('../controllers/acoes')
+const nodemailer = require('../controllers/nodemailer')
 
 module.exports = (app) => {
   app.use(cors());
@@ -32,6 +33,8 @@ module.exports = (app) => {
   app.get('/api/boasVindas', apiBoasVindas.getBoasVindas);
   app.get('/api/NossasAcoes', apiNossasAcoes.getAcoes);
   app.get('/api/depoimentos', apiDepoimentos.getDepoimentos);
+  app.post('/api/nodemailer', nodemailer)
+
 
   app.get('*', (req, res) => {
 		res.redirect('/');
