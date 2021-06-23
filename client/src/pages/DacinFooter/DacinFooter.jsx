@@ -3,9 +3,7 @@ import axios from 'axios';
 
 import './DacinFooter.css';
 import logoDA from "../assets/logoDA.svg"
-import barrinha from "../assets/barrinha.png"
 import citizinho from "../assets/citizinho.png"
-import coração from "../assets/coração.png"
 
 function DacinFooter() {
   return (
@@ -15,11 +13,9 @@ function DacinFooter() {
                 <div className="tituloEndereço">
                     <h1>Endereço</h1>
                 </div>
-                <div className="barrinha">
-                    <img src={barrinha}></img>
-                </div>
+                <div className="barrinha2"></div>
                 <div className="descriçãoEndereço">
-                    <p>Av. Jorn. Aníbal Fernandes,<br></br>
+                    <p className="paragrafo" >Av. Jorn. Aníbal Fernandes,<br></br>
                         s/n - Cidade Universitária,<br></br>
                         Recife - PE, 50740-560<br></br>
                         CIn - Centro de Informática<br></br>
@@ -31,22 +27,22 @@ function DacinFooter() {
                     <div className="tituloNumero">
                         <h1>Telefone</h1>
                     </div>
-                    <div className="barrinha">
-                        <img src={barrinha}></img>
+                    <div className="barrinha2">
+                        
                     </div>
                     <div className="descriçãoNumero">
-                        <p>(81) xxxxx - xxxx</p>
+                        <p className="paragrafo">(81) xxxxx - xxxx</p>
                     </div>
                 </div>
                 <div className="email">
                     <div className="tituloEmail">
                         <h1>Email</h1>
                     </div>
-                    <div className="barrinha">
-                        <img src={barrinha}></img>
+                    <div className="barrinha2">
+                        
                     </div>
                     <div className="descriçãoEmail">
-                        <p>example@email.com</p>
+                        <p className="paragrafo" >example@email.com</p>
                     </div>      
                 </div>
             </div>
@@ -57,7 +53,7 @@ function DacinFooter() {
             </div>
             <div className ="mensagemCiti">
                 <div className="mensagem">
-                    <p>Made with &lt;/&gt; and &#10084; by </p>
+                    <p className="paragrafo" >Made with &lt;/&gt; and &#10084; by </p>
                 </div>
                 <div className="citizinho">
                     <img src={citizinho}></img>

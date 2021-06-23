@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap');
+
+body, html {
+    margin: 0px;
+    font-family: 'Barlow', sans-serif;
+}
+
+#depoimentos{
+    width: 100%;
+    height: 730px;
+    background: #F1F1F1;
+}
+
+.barrinha{
+    width: 60px;
+    height: 5px;
+    background: #F1F1F1;
+}    
+
+.descrição2{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 100%;
+    height: 316px;
+    background: #4C3B92;
+    padding-left: 120px;
+}
+
+.titulo h1{
+    width: 235px;
+    height: 48px;
+    font-size: 40px;
+    line-height: 48px;
+    color: #F1F1F1;
+}
+
+.titulo{
+    padding: 24px 0px 21px;
+}
+
+.texto {
+    width: 355px;
+    height: 66px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #F1F1F1;
+}
+
+.carrosseldepoimentos{
+    position: relative;
+    bottom: 60px;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+
+}
+
+.carrosselfilhodepoimentos{
+    width: 80%;
+    height: 400px;
+}
+
+
+
+.slick-dots{
+    left: 45.5%;
+    width: 100px;
+    z-index: 0;
+}
+
+.slick-dots li button{
+    margin: 0px;
+    width: 10px;
+    height: 10px;
+}
+
+.slick-dots li{
+    width: 10px;
+    height: 10px;
+}
+.slick-dots li button:before {
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    font-size: 10px;
+    color: #A99BDE;
+    opacity: 100%;
+}
+  
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #4C3B92;
+}
+.slick-prev:before, .slick-next:before{
+    font-size: 0px;
+}
+
+.slick-prev{
+    top: 382.5px;
+    left: 45.5%;
+    z-index: 1;
+}
+
+.slick-next{
+    margin-left: 88px;
+    left: 45.5%;
+    top:35px;
+    z-index: 1;
+}
+
+
+
+@media (max-width:400px){
+
+    #depoimentos{
+        height: 438px;
+    }
+
+    .descrição2{
+        height: 171px;
+        padding-left: 12px;
+    }
+
+    .titulo h1{
+        width: 184px;
+        height: 27px;
+        font-size: 22px;
+        line-height: 26.4px;
+    }
+    
+    .titulo{
+        padding: 12px 0px 12px;
+    }
+    
+    .texto {
+        width: 296px;
+        height: 57px;
+        font-size: 16px;
+        line-height: 19.2px;
+    }
+    .barrinha{
+        width: 30px;
+        height: 3px;
+    }    
+
+    .carrosseldepoimentos{
+        position: relative;
+        left: 0;
+        bottom: 35px;
+        width: 100%;
+        height: 291px;
+    }
+
+    .carrosselfilhodepoimentos{
+        width: 100%;
+        height: 247px;
+    }
+
+    .slick-prev img, .slick-next img {
+        display: none
+    }
+
+    .slick-dots{
+        top:98% ;
+        left: 36.5%;
+    }
+    
+    .slick-dots li button{
+        margin: 0;
+        width: 4px;
+        height: 4px;
+    }
+    
+    .slick-dots li button:before{
+        width: 4px;
+        height: 4px;
+        line-height: 10px;
+        font-size: 4px;
+    }
+    
+    .slick-dots li{
+        width: 4px;
+        height: 4px;
+    }
+   
+      
+}

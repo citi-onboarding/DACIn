@@ -3,8 +3,10 @@ import './cssGlobal.css';
 import {
   DacinFooter,
   BoasVindas,
+  DaContatos,
   SobreDA,
   NossasAcoes,
+  DaDepoimentos,
 } from './pages';
 
 function App() {
@@ -13,6 +15,8 @@ function App() {
       <BoasVindas />
       <SobreDA />
       <NossasAcoes />
+      <DaDepoimentos/>
+      <DaContatos/>
       <DacinFooter />
     </>
   );

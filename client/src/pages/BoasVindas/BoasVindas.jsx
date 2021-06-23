@@ -50,8 +50,8 @@ function BoasVindas() {
             <a href="#boasVindas" className="navbar-op" onClick={() => setToggle('')}>Início</a>
             <a href="#SobreDA" className="navbar-op" onClick={() => setToggle('')}>Sobre o DA</a>
             <a href="#NossasAcoes" className="navbar-op" onClick={() => setToggle('')}>Nossas ações</a>
-            <a href="/" className="navbar-op" onClick={() => setToggle('')}>Depoimentos</a>
-            <a href="/" className="navbar-op" onClick={() => setToggle('')}>Contato</a>
+            <a href="#depoimentos" className="navbar-op" onClick={() => setToggle('')}>Depoimentos</a>
+            <a href="#DaContatos" className="navbar-op" onClick={() => setToggle('')}>Contato</a>
           </div>
         </nav>
       </header>
