@@ -58,7 +58,7 @@ body, html {
     border-bottom-right-radius: 4px;
 }
 
-@media (max-width:400px) {
+@media (max-width:440px) {
 
     .descricaoCarrossel{
         box-shadow: 2.75758px 2.75758px 5.90909px rgba(0, 0, 0, 0.25);

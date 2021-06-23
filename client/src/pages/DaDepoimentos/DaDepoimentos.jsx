@@ -71,8 +71,33 @@ function DaDepoimentos() {
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     responsive: [
+
       {
-        breakpoint: 400,
+        breakpoint: 1140,
+          settings: {
+          seepd:500,
+          dots: true,
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+
+      {
+        breakpoint: 440,
+          settings: {
+          centerMode: true,
+          seepd:500,
+          dots: true,
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerPadding: "110px"
+        }
+      },
+      
+      {
+        breakpoint: 375,
           settings: {
           centerMode: true,
           seepd:500,
@@ -83,8 +108,9 @@ function DaDepoimentos() {
           centerPadding: "90px"
         }
       },
+
       {
-      breakpoint: 340,
+        breakpoint: 340,
           settings: {
           centerMode: true,
           seepd:500,

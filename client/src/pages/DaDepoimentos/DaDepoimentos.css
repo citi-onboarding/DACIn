@@ -64,9 +64,10 @@ body, html {
 
 
 .slick-dots{
-    left: 45.5%;
     width: 100px;
     z-index: 0;
+    margin-top: 375px;
+    margin-left: 45.5%;
 }
 
 .slick-dots li button{
@@ -111,7 +112,7 @@ body, html {
 
 
 
-@media (max-width:400px){
+@media (max-width:440px){
 
     #depoimentos{
         height: 438px;
@@ -162,8 +163,8 @@ body, html {
     }
 
     .slick-dots{
-        top:98% ;
-        left: 36.5%;
+        margin-top: 270px;
+        margin-left: 37.8%;
     }
     
     .slick-dots li button{
@@ -184,5 +185,13 @@ body, html {
         height: 4px;
     }
    
+    @media (max-width:330px){
+        .slick-dots{
+            margin-top: 270px;
+            margin-left: 34%;
+        }
+    }
+        
+    
       
 }

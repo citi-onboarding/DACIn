@@ -44,7 +44,7 @@ body, html {
     color: #14074B;
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 440px) {
     .ContentDA {
         position: absolute;
         margin-left: 74px;

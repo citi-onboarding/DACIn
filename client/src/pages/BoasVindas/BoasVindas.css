@@ -191,7 +191,7 @@ p.welcome {
   text-decoration: none;
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 440px) {
 
   header {
     height: 40px;
