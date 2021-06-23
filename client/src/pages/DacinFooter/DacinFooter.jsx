@@ -2,9 +2,8 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 import './DacinFooter.css';
-import logoDacin from "../assets/logoDacin.png"
+import logoDA from "../assets/logoDA.svg"
 import citizinho from "../assets/citizinho.png"
-
 
 function DacinFooter() {
   return (
@@ -50,7 +49,7 @@ function DacinFooter() {
         </div>
         <div className="informações">
             <div className="logo">
-                <img src={logoDacin}></img>
+                <img src={logoDA}></img>
             </div>
             <div className ="mensagemCiti">
                 <div className="mensagem">

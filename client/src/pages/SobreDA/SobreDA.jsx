@@ -13,10 +13,6 @@ import {
 
 import NextArrow from '../assets/next_arrow.svg'
 import PrevArrow from '../assets/prev_arrow.svg'
-import puzzle from '../assets/puzzle.svg'
-import info from '../assets/info.svg'
-import lamp from '../assets/lamp.svg'
-import notebook from '../assets/notebook.svg'
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -103,7 +99,7 @@ function SobreDA() {
 
 
   return (
-    <div className="SobreDA">
+    <div id="SobreDA">
       <SectionCards title={SobreDATEXT[0]?.title} description={SobreDATEXT[0]?.text} complement="SobreDA" />
       <div className="detailing">
         <div className="Surgimento">

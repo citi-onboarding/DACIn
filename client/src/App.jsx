@@ -5,6 +5,7 @@ import {
   BoasVindas,
   DaContatos,
   SobreDA,
+  NossasAcoes,
   DaDepoimentos,
 } from './pages';
 
@@ -13,6 +14,7 @@ function App() {
     <>
       <BoasVindas />
       <SobreDA />
+      <NossasAcoes />
       <DaDepoimentos/>
       <DaContatos/>
       <DacinFooter />

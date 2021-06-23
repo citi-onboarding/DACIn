@@ -51,7 +51,7 @@ function DaContatos() {
   
 
   return (
-    <div className="DaContatos">
+    <div id="DaContatos">
       <div className="bonecosContatos">
         <div className="boneco2"> <img src={boneco2} alt="boneco2"/> </div>
         <div className="boneco1"> <img src={boneco1} alt="boneco1"/> </div>
@@ -81,7 +81,9 @@ function DaContatos() {
             <label htmlFor="message">Mensagem:</label>
             <textarea rows="10" placeholder="Digite a sua mensagem" className="input-clear" requiredrows="10" value={mensagem} required onChange={(e) => setMensagem(e.target.value)} />
 
-            <button type="sumit"  > Enviar </button>
+            <button type="submit" className="ButtonContatos"> 
+                <span>Enviar</span>
+            </button>
           </form>
           
         </div>

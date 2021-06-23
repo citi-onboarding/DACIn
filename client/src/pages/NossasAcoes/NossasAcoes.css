@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    background-color: #F5F5F5;
+}
+
+.CardPosition {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.CardLine {
+    width: 7em;
+    height: 0.5em;
+    background-color: #F1F1F1;
+    margin-bottom: 2.8em;
+}
+
+.CardAcoes {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    background-image: linear-gradient(256.52deg, #DB1E2F 1.8%, #4C3B92 74.66%);
+    align-items: flex-end;
+    width: 535px;
+    height: 316px;
+    padding: 80px 120px 74px 60px;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.CardAcoes p {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8em;
+    color: #F1F1F1;
+}
+
+.CardAcoes h1 {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4em;
+    margin-bottom: 28px;
+    color: #F1F1F1;
+}
+
+.NossasAcoesInfo {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.AcoesContent1 > p {
+    font-size: 24px;
+    width: 180px;
+}
+
+.AcoesContent2 > p {
+    font-size: 24px;
+    width: 180px;
+}
+
+.AcoesContent3 > p {
+    font-size: 24px;
+    width: 180px;
+}
+
+.AcoesContent4 > p {
+    font-size: 24px;
+    width: 223px;
+}
+
+.NossasAcoesLine {
+    height: 2px;
+    width: 60px;
+    background-color: #14074B;
+    margin-bottom: 13px;
+}
+
+.AcoesContent1 > h1 {
+    position: relative;
+    width: 200px;
+    margin: -27px 0 28px 35px;
+}
+
+.AcoesContent2 > h1 {
+    position: relative;
+    width: 200px;
+    margin: -27px 0px 55px 50px;
+}
+
+.AcoesContent3 > h1 {
+    position: relative;
+    width: 200px;
+    margin: -27px 0px 55px 55px;
+}
+
+.AcoesContent4 > h1 {
+    position: relative;
+    width: 200px;
+    margin: -27px 0px 55px 57px;
+}
+
+.Info1 {
+    width: 250px;
+}
+
+.Info3 {
+    width: 250px;
+}
+
+.Info4 {
+    width: 250px;
+}
+
+.ButtonAcoes {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 35px;
+}
+
+.ButtonAcoes > a {
+    text-decoration: none;
+}
+
+.BlogButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 24px;
+    width: 228px;
+    height: 46px;
+    border: 2px solid #4C3B92;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.BlogButton > span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #4C3B92;
+}
+
+@media screen and (max-width: 340px) {
+    .CardAcoes {
+        padding: 0;
+        width: 100%;
+        height: 156px;
+        background-image: none;
+        background-color: #4C3B92;
+        border-radius: 0;
+        padding: 24px 12px 24px 12px;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .CardLine {
+        height: 3px;
+        width: 35px;
+        margin-bottom: 16px;
+    }
+    
+    .CardAcoes > p {
+        font-size: 16px;
+        line-height: 17px;
+    }
+
+    .CardAcoes h1{
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+
+    .NossasAcoesInfo {
+        margin-top: 24px;
+        flex-direction: column;
+        gap: 34px;
+    }
+
+    .Info1 > img {
+        width: 47px;
+        height: 64px;
+        margin-right: 24px;
+        margin-left: 15px;
+    }
+
+    .Info2 > img {
+        width: 49px;
+        height: 64px;
+        margin-right: 24px;
+        margin-left: 15px;
+    }
+
+    .Info3 > img {
+        width: 49px;
+        height: 64px;
+        margin-right: 24px;
+        margin-left: 15px;
+    }
+
+    .Info4 > img {
+       width: 55px;
+       height: 64px; 
+       margin-right: 19px;
+       margin-left: 12px;
+    }
+
+    .Info1 {
+        display: flex;
+    }
+
+    .Info2 {
+        display: flex;
+    }
+
+    .Info3 {
+        display: flex;
+    }
+
+    .Info4 {
+        display: flex;
+    }
+
+    .NossasAcoesLine {
+        width: 40px;
+        margin-bottom: 12px;
+    }
+    
+    .AcoesContent1 > h1 {
+        margin: 0;
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .AcoesContent1 > p {
+        font-size: 12px;
+        width: 222px;
+        line-height: 15px;
+    }
+
+    .AcoesContent2 > h1 {
+        margin: 0;
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .AcoesContent2 > p {
+        font-size: 12px;
+        width: 222px;
+        line-height: 15px;
+    }
+
+    .AcoesContent3 > h1 {
+        margin: 0;
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .AcoesContent3 > p {
+        font-size: 12px;
+        width: 222px;
+        line-height: 15px;
+    }
+
+    .AcoesContent4 > h1 {
+        margin: 0;
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .AcoesContent4 > p {
+        font-size: 12px;
+        width: 222px;
+        line-height: 15px;
+    }
+
+    .BlogButton {
+        width: 177px;
+        height: 32px;
+        gap: 10px;
+    }
+
+    .BlogButton > span {
+        font-size: 12px;
+    }
+
+    .BlogButton > img {
+        width: 12px;
+        height: 12px;
+    }
+
+    .ButtonAcoes {
+        margin-top: 30px;
+    }
+}
