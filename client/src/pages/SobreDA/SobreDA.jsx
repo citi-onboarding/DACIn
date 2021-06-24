@@ -3,7 +3,7 @@ import axios from 'axios';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import url from '../../../apiURL'
+import url from '../../apiURL'
 
 import './SobreDA.css';
 

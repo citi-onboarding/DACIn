@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import {DescricaoCarrossel} from "../../components"
-import url from '../../../apiURL'
+import url from '../../apiURL'
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 

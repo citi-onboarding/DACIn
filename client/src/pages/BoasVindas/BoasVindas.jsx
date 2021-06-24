@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import url from '../../../apiURL'
+import url from '../../apiURL'
 
 import './BoasVindas.css';
 import send_icon from '../assets/send_icon.svg'
