@@ -79,6 +79,7 @@ body, html {
     width: 10px;
     height: 10px;
 }
+
 .slick-dots li button:before {
     width: 10px;
     height: 10px;
@@ -109,9 +110,13 @@ body, html {
     z-index: 1;
 }
 
+@media screen and (max-width: 1229px) {
+    .slick-dots li button:before {
+        font-size: 8px;
+    }
+}
 
-
-@media (max-width:400px){
+@media (max-width:440px){
 
     #depoimentos{
         height: 438px;

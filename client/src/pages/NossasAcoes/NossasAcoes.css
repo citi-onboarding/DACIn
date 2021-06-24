@@ -8,6 +8,7 @@ body {
 }
 
 .CardPosition {
+
     display: flex;
     justify-content: flex-end;
 }
@@ -107,15 +108,16 @@ body {
 }
 
 .Info1 {
-    width: 250px;
+    width: 25em;
+    margin-left: 30px;
 }
 
 .Info3 {
-    width: 250px;
+    width: 25em;
 }
 
 .Info4 {
-    width: 250px;
+    width: 25em;
 }
 
 .ButtonAcoes {
@@ -141,6 +143,7 @@ body {
     border: 2px solid #4C3B92;
     box-sizing: border-box;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .BlogButton > span {
@@ -150,7 +153,239 @@ body {
     color: #4C3B92;
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 1366px) and (min-width: 1229px){
+    .NossasAcoesInfo {
+        gap: 25px;
+    }
+    
+}
+
+@media screen and (max-width: 1229px) and (min-width: 948px){
+    .CardAcoes {
+        width: 44em;
+        height: 27em;
+        padding: 0;
+        padding-top: 60px;
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+
+    .CardAcoes > h1 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .CardAcoes > p {
+        font-size: 16px;
+    }
+
+    .CardLine {
+        width: 55px;
+        margin-bottom: 15px;
+    }
+
+    .NossasAcoesInfo {
+        gap: 20px;
+    }
+
+    .Info1 {
+        width: 200px;
+    }
+    .Info2 {
+        width: 200px;
+    }
+
+    .Info3 {
+        width: 200px;
+    }
+
+    .Info4 {
+        width: 200px;
+    }
+
+    .Info1 > img {
+        width: 75px;
+    }
+
+    .Info2 > img {
+        width: 75px;
+    }
+
+    .Info3 > img {
+        width: 75px;
+    }
+
+    .Info4 > img {
+        width: 75px;
+    }
+
+    .AcoesContent1 > h1 {
+        font-size: 20px;
+        width: 150px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+        margin-top: -20px;
+        line-height: 20px;
+    }
+
+    .AcoesContent1 > p {
+        font-size: 20px;
+    }
+
+    .AcoesContent2 > h1 {
+        font-size: 20px;
+        width: 150px;
+        margin-bottom: 38px;
+        margin-left: 30px;
+    }
+
+    .AcoesContent2 > p {
+        font-size: 20px;
+    }
+
+    .AcoesContent3 > h1 {
+        font-size: 20px;
+        width: 150px;
+        margin-bottom: 38px;
+        margin-left: 30px;
+    }
+
+    .AcoesContent3 > p {
+        font-size: 20px;
+    }
+
+    .AcoesContent4 > h1 {
+        font-size: 20px;
+        width: 150px;
+        margin-bottom: 38px;
+        margin-left: 30px;
+    }
+
+    .AcoesContent4 > p {
+        font-size: 20px;
+    }
+
+    .BlogButton {
+        margin-top: 0px;
+    }
+    
+}
+
+@media screen and (max-width: 948px) and (min-width: 770px){
+    .CardPosition {
+        margin-top: 15em;
+    }
+
+    .NossasAcoesInfo {
+        gap: 25px;
+    }
+
+    .Info1 {
+        width: 150px;
+        margin-left: 0;
+    }
+    .Info2 {
+        width: 150px;
+    }
+
+    .Info3 {
+        width: 150px;
+    }
+
+    .Info4 {
+        width: 150px;
+    }
+
+    .Info1 > img {
+        width: 50px;
+    }
+
+    .Info2 > img {
+        width: 50px;
+    }
+
+    .Info3 > img {
+        width: 50px;
+    }
+
+    .Info4 > img {
+        width: 50px;
+    }
+
+    .AcoesContent1 > h1 {
+        font-size: 16px;
+        width: 80px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+        margin-top: -20px;
+        line-height: 20px;
+    }
+
+    .AcoesContent1 > p {
+        font-size: 16px;
+        width: 125px;
+    }
+
+    .AcoesContent2 > h1 {
+        font-size: 16px;
+        width: 80px;
+        margin-bottom: 38px;
+        margin-left: 30px;
+    }
+
+    .AcoesContent2 > p {
+        font-size: 16px;
+        width: 125px;
+    }
+
+    .AcoesContent3 > h1 {
+        font-size: 16px;
+        width: 80px;
+        margin-bottom: 38px;
+        margin-left: 30px;
+    }
+
+    .AcoesContent3 > p {
+        font-size: 16px;
+        width: 125px;
+    }
+
+    .AcoesContent4 > h1 {
+        font-size: 16px;
+        width: 80px;
+        margin: 0;
+        margin-top: -23px;
+        margin-bottom: 38px;
+        margin-left: 23px;
+    }
+
+    .AcoesContent4 > p {
+        font-size: 16px;
+        width: 135px;
+    }
+
+    .BlogButton {
+        margin-top: 0px;
+    }
+    
+}
+
+@media screen and (max-width: 770px) and (min-width: 440px){
+    .CardAcoes {
+        width: 100%;
+        background-image: none;
+        background-color: #4C3B92;
+        border-radius: 0;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    #NossasAcoes {
+        margin-top: -150px;
+    }
+}
+
+@media screen and (max-width: 440px) {
     .CardAcoes {
         padding: 0;
         width: 100%;
@@ -215,6 +450,7 @@ body {
 
     .Info1 {
         display: flex;
+        margin-left: 0;
     }
 
     .Info2 {

@@ -72,7 +72,7 @@ function DaDepoimentos() {
     prevArrow: <SamplePrevArrow />,
     responsive: [
       {
-        breakpoint: 400,
+        breakpoint: 440,
           settings: {
           centerMode: true,
           seepd:500,

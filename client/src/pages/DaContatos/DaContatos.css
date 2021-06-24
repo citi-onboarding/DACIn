@@ -88,6 +88,7 @@ body, html {
 
 
 .meiosContatos input{
+    background-color: #F1F1F1;
     padding: 14px 24px;
     width: 348px;
     height: 50px;
@@ -124,6 +125,7 @@ body, html {
     outline: none;
     font-size: 18px;
     line-height: 22px;
+    background-color: #F1F1F1;
 }
 
 
@@ -136,6 +138,7 @@ body, html {
     background-color: #4C3B92;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .ButtonContatos > span {

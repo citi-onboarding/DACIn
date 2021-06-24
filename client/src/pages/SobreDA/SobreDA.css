@@ -29,6 +29,7 @@ body {
 
 .slick-slider {
     height: 330px;
+    width: 300px;
 }
 
 .carousel {
@@ -62,10 +63,11 @@ body {
 }
 
 .slick-dots {
+    position: relative;
+    margin-left: -60px;
+    margin-top: 20px;
     height: -30px;
-    display: flex;
     top: 0%;
-    margin-top: 37em;
 }
 
 .slick-prev:before,
@@ -84,28 +86,22 @@ body {
     color: #4C3B92;
 }
 
-.slick-prev {
-    top: 379px;
-    left: 25%;
-}
-
-.slick-next {
-    left: 65%;
-    top: 46.75px;
-    z-index: 1;
-}
 
 .slick-dots li button {
-    margin: 0;
     width: 4px;
     height: 4px;
 }
 
-.slick-dots li button:before {
-    width: 4px;
-    height: 4px;
-    line-height: 10px;
-    font-size: 10px;
+.slick-next > img {
+    position: relative;
+    left: 1px;
+    top: 10px;
+}
+
+.slick-prev > img {
+    position: relative;
+    left: -70px;
+    top: -5px;
 }
 
 .slick-dots li {
@@ -114,8 +110,8 @@ body {
 }
 
 .slick-dots > ul {
-    margin: 0 !important;
-    width: 300px;
+    margin: auto;
+    width: 150px;
 }
 
 .PurpleSquare-Surgimento,
@@ -160,7 +156,206 @@ body {
     width: 280px;
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width:1229px) and (min-width: 948px){
+    .PurpleSquare-Surgimento,
+    .PurpleSquare-Atualmente,
+    .PurpleSquare-Finalidade,
+    .PurpleSquare-Cursos {
+        height: 60px;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .detailing {
+        gap: 30px;
+    }
+
+    .PurpleSquare-Surgimento {
+        padding: 0;
+    }
+    
+    .PurpleSquare-Surgimento>img {
+        width: 44.75px;
+        height: 34.15px;
+    }
+
+    .PurpleSquare-Atualmente>img {
+        width: 38.57px;
+        height: 34.54px;
+    }
+
+    .PurpleSquare-Atualmente {
+        padding: 0;
+    }
+
+    .PurpleSquare-Finalidade {
+        padding: 0;
+    }
+    
+    .PurpleSquare-Finalidade>img {
+        width: 44.75px;
+        height: 34.15px;
+    }
+
+    .PurpleSquare-Cursos {
+        padding: 0;
+    }
+
+    .PurpleSquare-Cursos>img {
+        width: 44.75px;
+        height: 34.15px;
+    }
+
+    .sectionCards-SobreDA {
+        width: 44em;
+        height: 27em;
+        padding: 40px 50px 60px 80px;
+    }
+
+    .paragraphDA-Surgimento {
+        width: 200px;
+    }
+
+    .paragraphDA-Atualmente {
+        width: 200px;
+    }
+
+    .paragraphDA-Finalidade {
+        width: 200px;
+    }
+
+    .paragraphDA-Cursos {
+        width: 200px;
+    }
+
+    .slick-slider {
+        height: 280px;
+        width: 250px;
+    }
+
+    .carousel {
+        margin-top: 20em;
+        margin-left: 13em;
+    }
+
+    .carousel-content {
+        height: 280px;
+        width: 250px;
+    }
+
+    .carousel-card {
+        height: 280px;
+        width: 250px;
+    }
+
+    .carousel-card > img {
+        height: 280px;
+        width: 250px;
+    }
+
+    .slick-next > img {
+        width: 16px;
+        height: 16px;
+        top: 1px;
+    }
+
+    .slick-prev > img {
+        width: 16px;
+        height: 16px;
+        position: relative;
+        left: -70px;
+        top: -65px;
+    }
+
+    .slick-dots {
+        margin-top: 8px;
+    }
+}
+
+@media screen and (max-width: 948px) and (min-width: 770px) {
+    .detailing {
+        margin-left: 20px;
+    }
+
+    .carousel {
+        margin-top: 26em;
+        margin-left: 4em;
+    }
+}
+
+@media screen and (max-width: 770px) and (min-width: 440px){
+    #SobreDA {
+        display: block;
+    }
+
+    .detailing {
+        margin-top: 300px;
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+
+    .sectionCards-SobreDA {
+        width: 100%;
+        padding-left: 45px;
+        padding-top: 60px;
+        background-image: none;
+        background-color: #4C3B92;
+        padding-right: 150px;
+        border-radius: 0;
+    }
+
+    .carousel {
+        background-color: none;
+        top: 0;
+        margin-top: 80em;
+        margin-left: 45px;
+        margin-right: 45px;
+        height: 200px;
+        width: 100%;
+    }
+
+    .carousel-content {
+        background-color: transparent;
+        box-shadow: none;
+        height: 200px;
+        width: 100%;
+    }
+
+    .carousel-card {
+        height: 200px;
+        width: 170px;
+        box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
+        margin: 20px 0px 20px 0px;
+    }
+
+    .carousel-card > img {
+        margin-top: 20px;
+        height: 200px;
+        width: 170px;
+    }
+
+    .slick-slider {
+        height: 250px;
+        width: 100%;
+    }
+
+    .slick-dots {
+        margin-top: 5px;
+    }
+
+    .slick-prev > img{
+        top: -90px;
+    }
+
+    .slick-next > img{
+        top: -3px;
+    }
+    
+}
+
+@media screen and (max-width: 440px) {
     #SobreDA {
         display: block;
     }
@@ -184,7 +379,7 @@ body {
     .detailing {
         display: block;
         margin-left: 12px;
-        margin-top: 150px;
+        margin-top: 155px;
     }
     .PurpleSquare-Surgimento,
     .PurpleSquare-Atualmente,
@@ -228,7 +423,7 @@ body {
     .carousel {
         background-color: none;
         top: 0;
-        margin-top: 46em;
+        margin-top: 59em;
         margin-left: 0;
         height: 144px;
         width: 100%;
@@ -251,7 +446,9 @@ body {
         height: 124px;
     }
     .slick-dots {
-        margin-top: 17.5em;
+        margin-top: -20em;
+        position: relative;
+        margin-left: 2px;
     }
     .slick-dots li button:before {
         font-size: 5px;
@@ -274,5 +471,20 @@ body {
     .slick-dots li {
         width: 1px;
         height: 4px;
+    }
+
+    .slick-dots > ul {
+        width: 90px;
+    }
+
+    .slick-slider {
+        height: 180px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 420px) and (min-width: 340px) {
+    .detailing {
+        margin-top: 155px;
     }
 }
