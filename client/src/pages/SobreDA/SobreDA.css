@@ -27,7 +27,7 @@ body {
     border-radius: 0px 8px 8px 0px;
 }
 
-.slick-slider {
+.carousel .slick-slider {
     height: 330px;
     width: 300px;
 }
@@ -62,54 +62,54 @@ body {
     margin-top: -18px;
 }
 
-.slick-dots {
+.carousel .slick-dots {
     position: relative;
-    margin-left: -60px;
+    margin-left: 80px;
     margin-top: 20px;
     height: -30px;
     top: 0%;
 }
 
-.slick-prev:before,
-.slick-next:before {
+.carousel .slick-prev:before,
+.carousel .slick-next:before {
     display: none;
 }
 
-.slick-dots li button:before {
+.carousel .slick-dots li button:before {
     font-size: 10px;
     color: #A99BDE;
     opacity: 100%;
 }
 
-.slick-dots li.slick-active button:before {
+.carousel .slick-dots li.slick-active button:before {
     opacity: 1;
     color: #4C3B92;
 }
 
 
-.slick-dots li button {
+.carousel .slick-dots li button {
     width: 4px;
     height: 4px;
 }
 
-.slick-next > img {
+.carousel .slick-next > img {
     position: relative;
     left: 1px;
     top: 10px;
 }
 
-.slick-prev > img {
+.carousel .slick-prev > img {
     position: relative;
     left: -70px;
     top: -5px;
 }
 
-.slick-dots li {
+.carousel .slick-dots li {
     width: 3px;
     height: 4px;
 }
 
-.slick-dots > ul {
+.carousel .slick-dots > ul {
     margin: auto;
     width: 150px;
 }
@@ -230,7 +230,7 @@ body {
         width: 200px;
     }
 
-    .slick-slider {
+    .carousel .slick-slider {
         height: 280px;
         width: 250px;
     }
@@ -255,13 +255,13 @@ body {
         width: 250px;
     }
 
-    .slick-next > img {
+    .carousel .slick-next > img {
         width: 16px;
         height: 16px;
         top: 1px;
     }
 
-    .slick-prev > img {
+    .carousel .slick-prev > img {
         width: 16px;
         height: 16px;
         position: relative;
@@ -269,8 +269,9 @@ body {
         top: -65px;
     }
 
-    .slick-dots {
+    .carousel .slick-dots {
         margin-top: 8px;
+        margin-left: 55px;
     }
 }
 
@@ -309,8 +310,8 @@ body {
     .carousel {
         background-color: none;
         top: 0;
-        margin-top: 80em;
-        margin-left: 45px;
+        margin-top: 81em;
+        margin-left: 4%;
         margin-right: 45px;
         height: 200px;
         width: 100%;
@@ -336,20 +337,21 @@ body {
         width: 170px;
     }
 
-    .slick-slider {
+    .carousel .slick-slider {
         height: 250px;
         width: 100%;
     }
 
-    .slick-dots {
+    .carousel .slick-dots {
         margin-top: 5px;
+        margin-left: 35%;
     }
 
-    .slick-prev > img{
+    .carousel .slick-prev > img{
         top: -90px;
     }
 
-    .slick-next > img{
+    .carousel .slick-next > img{
         top: -3px;
     }
     
@@ -445,39 +447,39 @@ body {
         width: 108px;
         height: 124px;
     }
-    .slick-dots {
-        margin-top: -20em;
+    .carousel .slick-dots {
+        margin-top: -2em;
         position: relative;
-        margin-left: 2px;
+        margin-left: 37%;
     }
-    .slick-dots li button:before {
+    .carousel .slick-dots li button:before {
         font-size: 5px;
     }
-    .slick-prev>img,
-    .slick-next>img {
+    .carousel .slick-prev>img,
+    .carousel .slick-next>img {
         display: none;
     }
-    .slick-dots li button {
+    .carousel .slick-dots li button {
         margin: 0;
         width: 4px;
         height: 4px;
     }
-    .slick-dots li button:before {
+    .carousel .slick-dots li button:before {
         width: 4px;
         height: 4px;
         line-height: 10px;
         font-size: 6px;
     }
-    .slick-dots li {
+    .carousel .slick-dots li {
         width: 1px;
         height: 4px;
     }
 
-    .slick-dots > ul {
+    .carousel .slick-dots > ul {
         width: 90px;
     }
 
-    .slick-slider {
+    .carousel .slick-slider {
         height: 180px;
         width: 100%;
     }
