@@ -84,6 +84,17 @@ function DaDepoimentos() {
       },
 
       {
+        breakpoint: 770,
+          settings: {
+          seepd:500,
+          dots: true,
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+
+      {
         breakpoint: 440,
           settings: {
           centerMode: true,
@@ -93,6 +104,19 @@ function DaDepoimentos() {
           slidesToShow: 1,
           slidesToScroll: 1,
           centerPadding: "110px"
+        }
+      },
+
+      {
+        breakpoint: 390,
+          settings: {
+          centerMode: true,
+          seepd:500,
+          dots: true,
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerPadding: "100px"
         }
       },
       
@@ -110,7 +134,7 @@ function DaDepoimentos() {
       },
 
       {
-        breakpoint: 340,
+        breakpoint: 350,
           settings: {
           centerMode: true,
           seepd:500,

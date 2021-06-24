@@ -110,7 +110,31 @@ body, html {
     z-index: 1;
 }
 
+@media (max-width:1140px){
 
+    .slick-prev img, .slick-next img {
+        display: none
+    }
+
+    .slick-dots{
+        margin-left: 44%;
+    }
+
+}
+
+@media (max-width:750px){
+    .slick-dots{
+        margin-left: 42%;
+    }
+}
+
+@media (max-width:590px){
+    
+    .slick-dots{
+        margin-left: 39%;
+    }
+    
+}
 
 @media (max-width:440px){
 
