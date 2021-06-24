@@ -42,7 +42,7 @@ body {
   color: #F1F1F1;
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 440px) {
   .title {
     font-size: 22px;
     margin-bottom: 12px;

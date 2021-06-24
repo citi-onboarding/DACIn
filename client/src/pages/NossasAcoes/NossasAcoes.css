@@ -150,7 +150,7 @@ body {
     color: #4C3B92;
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 440px) {
     .CardAcoes {
         padding: 0;
         width: 100%;

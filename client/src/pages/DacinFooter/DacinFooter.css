@@ -87,7 +87,83 @@ h1{
   height: 22px;
 }
 
-@media (max-width: 400px){
+@media (max-width: 1100px){
+
+  .contatos{
+    gap: 60px;
+  }
+
+  .endereço{
+    padding-left: 50px;
+    padding-top: 20px;
+  }
+  
+  .contato2{
+    gap:30px ;
+    padding-top: 20px;
+  }
+
+  .logo{
+    padding-top: 20px;
+    padding-right: 50px;
+   
+  }
+
+}
+
+@media (max-width:850px){
+  .contatos{
+    gap: 40px;
+  }
+
+  .contatos p{
+    font-size:16px;
+    line-height: 20px;
+  }
+
+  .telefone, .email{
+    width: 115px;
+  }
+
+  .endereço{
+    width: 210px;
+    padding-left: 20px;
+  }
+
+}
+
+@media (max-width:750px){
+  .contato2{
+    flex-direction: column;
+  }
+}
+
+@media (max-width:660px){
+  .Footer{
+    flex-direction: column;
+    height: 340px;
+    align-items: flex-start;
+  }
+
+  .informações{
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 2%;
+  }
+
+  .mensagem{
+    width: 200px;
+    text-align: center;
+  }
+
+  .logo{
+    padding: 0px 20px 0px;
+  }
+
+}
+
+
+@media (max-width: 440px){
   h1{
     font-size: 16px;
     line-height: 19px;
