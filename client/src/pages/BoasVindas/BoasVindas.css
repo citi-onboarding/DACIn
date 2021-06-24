@@ -245,7 +245,7 @@ p.welcome {
   }
 }
 
-@media screen and (max-width: 948px) {
+@media screen and (max-width: 948px) and (min-width: 770px) {
   
   .images {
     margin-top: 20px;
@@ -260,7 +260,7 @@ p.welcome {
 
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 770px) and (min-width: 440px) {
   header {
     height: 80px;
     padding-left: 45px;
@@ -375,13 +375,6 @@ p.welcome {
 
   .hamburguer {
     display: block;
-  }
-
-  .teste {
-    width: 50px;
-    height: 50px;
-    background-color: blueviolet;
-    display: none;
   }
 
   .options {

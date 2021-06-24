@@ -153,14 +153,14 @@ body {
     color: #4C3B92;
 }
 
-@media screen and (max-width: 1366px) and (min-width: 1229px){
+@media screen and (max-width: 1366px){
     .NossasAcoesInfo {
         gap: 25px;
     }
     
 }
 
-@media screen and (max-width: 1229px) and (min-width: 948px){
+@media screen and (max-width: 1229px){
     .CardAcoes {
         width: 44em;
         height: 27em;
@@ -271,7 +271,7 @@ body {
     
 }
 
-@media screen and (max-width: 948px) and (min-width: 770px){
+@media screen and (max-width: 948px){
     .CardPosition {
         margin-top: 15em;
     }
@@ -370,7 +370,7 @@ body {
     
 }
 
-@media screen and (max-width: 770px) and (min-width: 440px){
+@media screen and (max-width: 770px){
     .CardAcoes {
         width: 100%;
         background-image: none;
@@ -474,6 +474,7 @@ body {
         margin: 0;
         font-size: 16px;
         margin-bottom: 8px;
+        width: 150px;
     }
 
     .AcoesContent1 > p {
