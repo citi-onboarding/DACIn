@@ -1,5 +1,5 @@
-const host = process.env.NODE_ENV;
+const host = process.env.NODE_ENV === 'production';
 
 export default { 
-    url: host === 'production' ? 'http://localhost:3001' : 'https://dacin-onepage.herokuapp.com'
+    url: host ? 'https://dacin-onepage.herokuapp.com' : 'http://localhost:3001'
 }
