@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import {DescricaoCarrossel} from "../../components"
+import url from '../../../apiURL'
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
@@ -45,12 +46,12 @@ function DaDepoimentos() {
   const [DepoimentosInformacoes, setDepoimentosInformacoes] = useState([]);
   
   const loadDepoimentosCarrossel = async () => {
-    const res = await axios.get('http://localhost:3001/api/depoimentos');
+    const res = await axios.get(`${url.url}/api/depoimentos`);
     setDepoimentosCarrossel(res.data.dataCaixaDepoimentos);
     
   };
   const loadDepoimentosInformacoes = async () => {
-    const res = await axios.get('http://localhost:3001/api/depoimentos');
+    const res = await axios.get(`${url.url}/api/depoimentos`);
     setDepoimentosInformacoes(res.data.dataDepoimentos);
     
   };

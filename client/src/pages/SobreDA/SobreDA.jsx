@@ -3,6 +3,7 @@ import axios from 'axios';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import url from '../../../apiURL'
 
 import './SobreDA.css';
 
@@ -95,15 +96,15 @@ function SobreDA() {
   const [ImagesDA, setImagesDA] = useState([]);
 
   const loadImagesDA = async () => {
-    const res = await axios.get('http://localhost:3001/api/sobreDA');
+    const res = await axios.get(`${url.url}/api/sobreDA`);
     setImagesDA(res.data.datacarrosselDA);
   };
   const loadInfoDA = async () => {
-    const res = await axios.get('http://localhost:3001/api/sobreDA');
+    const res = await axios.get(`${url.url}/api/sobreDA`);
     setInfoDA(res.data.datainformationsDA);
   };
   const loadSobreDATEXT = async () => {
-    const res = await axios.get('http://localhost:3001/api/sobreDA');
+    const res = await axios.get(`${url.url}/api/sobreDA`);
     setSobreDATEXT(res.data.datasobreDA);
   };
 

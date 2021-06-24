@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import url from '../../../apiURL'
 
 import './NossasAcoes.css';
 import send_icon_purple from '../assets/send_icon_purple.svg'
@@ -10,12 +11,12 @@ function NossasAcoes() {
   const [NossasAcoesInfo, setNossasAcoesInfo] = useState([]);
 
   const loadNossasAcoesDescription = async () => {
-    const res = await axios.get('http://localhost:3001/api/NossasAcoes');
+    const res = await axios.get(`${url.url}/api/NossasAcoes`);
     setNossasAcoesDescription(res.data.dataNossasAcoes);
   };
 
   const loadNossasAcoesInfo = async () => {
-    const res = await axios.get('http://localhost:3001/api/NossasAcoes');
+    const res = await axios.get(`${url.url}/api/NossasAcoes`);
     setNossasAcoesInfo(res.data.dataAcoesArea);
   };
 

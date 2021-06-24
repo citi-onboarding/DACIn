@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import url from '../../../apiURL'
 
 import './DaContatos.css';
 
@@ -21,7 +22,7 @@ function DaContatos() {
   const sendMaile = async () => {
 
     try {
-        const db = await axios.post('http://localhost:3001/api/Nodemailer', {
+        const db = await axios.post(`${url.url}/api/Nodemailer`, {
             "name": name,
             "email": email,
             "subject": subject,
