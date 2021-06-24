@@ -44,6 +44,24 @@ body, html {
     color: #14074B;
 }
 
+@media screen and (max-width: 1229px) {
+    .ContentDA > p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    
+    .ContentDA {
+        width: 210px;
+    }
+
+    .descricaoDA {
+        width: 250px;
+    }
+    
+}
+
 @media screen and (max-width: 440px) {
     .ContentDA {
         position: absolute;

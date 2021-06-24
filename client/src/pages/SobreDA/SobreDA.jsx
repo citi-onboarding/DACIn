@@ -58,7 +58,23 @@ function SobreDA() {
     ),
     responsive: [
       {
-        breakpoint: 340,
+        breakpoint: 770,
+        settings: {
+          infinite: false,
+          initialSlide: 0,
+          speed: 500,
+          centerMode: true,
+          centerPadding: "-5px",
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        }
+
+      },
+
+      {
+        breakpoint: 440,
         settings: {
           infinite: false,
           initialSlide: 0,
