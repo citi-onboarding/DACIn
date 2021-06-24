@@ -97,6 +97,7 @@ body, html {
     font-size: 18px;
     line-height: 22px;
     color: #AEAEAE;
+    background: #F5F5F5;
     outline: none;
 }
 
@@ -121,6 +122,7 @@ body, html {
     border: 3px solid #4C3B92;
     border-radius: 4px;
     color: #AEAEAE;
+    background: #F5F5F5;
     outline: none;
     font-size: 18px;
     line-height: 22px;
