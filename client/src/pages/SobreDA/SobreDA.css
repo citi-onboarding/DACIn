@@ -78,11 +78,11 @@ body {
 .carousel .slick-dots li button:before {
     font-size: 10px;
     color: #A99BDE;
-    opacity: 100%;
+    opacity: 1;
 }
 
 .carousel .slick-dots li.slick-active button:before {
-    opacity: 100%;
+    opacity: 1;
     color: #4C3B92;
 }
 
@@ -293,9 +293,11 @@ body {
 
     .detailing {
         margin-top: 280px;
-        margin-left: 45px;
+        margin-left: 17%;
         margin-right: 45px;
     }
+
+
 
     .sectionCards-SobreDA {
         width: 100%;
@@ -310,7 +312,7 @@ body {
     .carousel {
         background-color: none;
         top: 0;
-        margin-top: 86em;
+        margin-top: 80em;
         margin-left: 4%;
         margin-right: 45px;
         height: 200px;
@@ -454,7 +456,7 @@ body {
     }
     .carousel .slick-dots li button:before {
         font-size: 5px;
-        opacity: 100%;
+        opacity: 1;
     }
     .carousel .slick-prev>img,
     .carousel .slick-next>img {
@@ -470,7 +472,7 @@ body {
         height: 4px;
         line-height: 10px;
         font-size: 6px;
-        opacity: 100%;
+        opacity: 1;
     }
     .carousel .slick-dots li {
         width: 1px;
