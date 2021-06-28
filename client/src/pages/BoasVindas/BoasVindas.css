@@ -288,6 +288,16 @@ p.welcome {
     margin-top: 60px;
     margin-bottom: 0;
   }
+
+  .images > img {
+    width: 120px;
+    padding-right: 55px;
+  }
+
+  .images > img:nth-child(5) {
+    padding-right: 55px;
+  }
+
   .navbar-op {
     font-size: 16px;
   }
