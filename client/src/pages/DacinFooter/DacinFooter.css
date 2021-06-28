@@ -136,6 +136,10 @@ h1{
   .contato2{
     flex-direction: column;
   }
+
+  .contatos {
+    width: 100%;
+  }
 }
 
 @media (max-width:660px){

@@ -7,7 +7,10 @@ function DescricaoCarrossel(props) {
 
   return (
     <div className="descricaoCarrossel">
-      <div class="img1" style={{backgroundImage: `url(${props.linkImage})`}} />
+
+      <div className="fotoDepoimentos">
+        <img src={props.linkImage} alt="imagem depoimentos" className="img1"/>
+      </div>
       <div className="descrição">
         <p>{props.text}</p>
       </div>

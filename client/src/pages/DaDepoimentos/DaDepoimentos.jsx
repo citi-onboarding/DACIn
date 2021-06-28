@@ -158,7 +158,7 @@ function DaDepoimentos() {
           <h1> Depoimentos</h1>
         </div>
         <div>
-          <p className="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida amet in neque pretium, ut id vestibulum tempus sagittis. </p>
+          <p className="texto">{DepoimentosInformacoes[0]?.text}</p>
         </div>
       </div>
       <div className="carrosseldepoimentos">
@@ -166,7 +166,7 @@ function DaDepoimentos() {
           <Slider {...settings}>
           {DepoimentosCarrossel?.map(({ image, text, name }) => (
             <div>
-                <DescricaoCarrossel linkImage={image.secure_url}  text={text} nome={name}     />
+                <DescricaoCarrossel linkImage={image.secure_url}  text={text} nome={name}/>
             </div>
           ))}
           </Slider>

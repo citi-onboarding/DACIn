@@ -193,9 +193,10 @@ body, html {
         display: none
     }
 
-    .slick-dots{
-        margin-top: 270px;
-        margin-left: 37.8%;
+    .carrosseldepoimentos .slick-dots{
+        margin-top: 10px;
+        margin-left: 35.2%;
+        margin-bottom: 25px;
     }
     
     .slick-dots li button{
@@ -215,11 +216,13 @@ body, html {
         width: 4px;
         height: 4px;
     }
+
+
    
     @media (max-width:330px){
-        .slick-dots{
+        .carrosseldepoimentos .slick-dots{
             margin-top: 270px;
-            margin-left: 34%;
+            margin-left: 35%;
         }
     }
         
