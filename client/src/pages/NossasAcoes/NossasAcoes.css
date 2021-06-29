@@ -144,6 +144,7 @@ body {
     box-sizing: border-box;
     border-radius: 4px;
     cursor: pointer;
+    background-color: #F5F5F5;
 }
 
 .BlogButton > span {

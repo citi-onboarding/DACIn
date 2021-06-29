@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import url from '../../apiURL'
 
 import './BoasVindas.css';
 import send_icon from '../assets/send_icon.svg'
@@ -16,7 +17,7 @@ function BoasVindas() {
   const [BoasVindasInfo, setBoasVindasInfo] = useState([]);
 
   const loadBoasVindasInfo = async () => {
-    const res = await axios.get('http://localhost:3001/api/boasVindas');
+    const res = await axios.get(`${url.url}/api/boasVindas`);
     setBoasVindasInfo(res.data);
   };
 

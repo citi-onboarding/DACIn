@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import url from '../../apiURL'
 
 import './DaContatos.css';
 
@@ -7,6 +8,17 @@ import boneco1 from '../DaContatos/assets/boneco1.png'
 import boneco2 from '../DaContatos/assets/boneco2.png'
 
 function DaContatos() {
+  const [ContatoInformacoes, setContatoInformacoes] = useState([]);
+  
+  const loadContatoInformacoes = async () => {
+    const res = await axios.get(`${url.url}/api/contato`);
+    setContatoInformacoes(res.data);  
+  };
+
+  useEffect(() => {
+    loadContatoInformacoes();
+  }, []);
+  
 
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -21,7 +33,7 @@ function DaContatos() {
   const sendMaile = async () => {
 
     try {
-        const db = await axios.post('http://localhost:3001/api/Nodemailer', {
+        const db = await axios.post(`${url.url}/api/Nodemailer`, {
             "name": name,
             "email": email,
             "subject": subject,
@@ -95,7 +107,7 @@ function DaContatos() {
           <h1>Contato</h1>
         </div>
         <div className="textoContatos">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida amet in neque pretium, ut id vestibulum tempus sagittis.</p>
+          <p>{ContatoInformacoes[0]?.description}</p>
         </div>
       </div>
 

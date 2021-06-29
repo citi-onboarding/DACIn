@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import {DescricaoCarrossel} from "../../components"
+import url from '../../apiURL'
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
@@ -45,12 +46,12 @@ function DaDepoimentos() {
   const [DepoimentosInformacoes, setDepoimentosInformacoes] = useState([]);
   
   const loadDepoimentosCarrossel = async () => {
-    const res = await axios.get('http://localhost:3001/api/depoimentos');
+    const res = await axios.get(`${url.url}/api/depoimentos`);
     setDepoimentosCarrossel(res.data.dataCaixaDepoimentos);
     
   };
   const loadDepoimentosInformacoes = async () => {
-    const res = await axios.get('http://localhost:3001/api/depoimentos');
+    const res = await axios.get(`${url.url}/api/depoimentos`);
     setDepoimentosInformacoes(res.data.dataDepoimentos);
     
   };
@@ -157,7 +158,7 @@ function DaDepoimentos() {
           <h1> Depoimentos</h1>
         </div>
         <div>
-          <p className="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida amet in neque pretium, ut id vestibulum tempus sagittis. </p>
+          <p className="texto">{DepoimentosInformacoes[0]?.text}</p>
         </div>
       </div>
       <div className="carrosseldepoimentos">
@@ -165,7 +166,7 @@ function DaDepoimentos() {
           <Slider {...settings}>
           {DepoimentosCarrossel?.map(({ image, text, name }) => (
             <div>
-                <DescricaoCarrossel linkImage={image.secure_url}  text={text} nome={name}     />
+                <DescricaoCarrossel linkImage={image.secure_url}  text={text} nome={name}/>
             </div>
           ))}
           </Slider>
